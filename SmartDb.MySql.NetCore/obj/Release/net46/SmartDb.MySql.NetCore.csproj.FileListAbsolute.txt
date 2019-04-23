@@ -1,0 +1,11 @@
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\net46\SmartDb.MySql.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\net46\SmartDb.MySql.NetCore.pdb
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\net46\Google.Protobuf.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\net46\MySql.Data.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\net46\SmartDb.Mapper.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\net46\SmartDb.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\net46\SmartDb.MySql.NetCore.csproj.CoreCompileInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\net46\SmartDb.MySql.NetCore.AssemblyInfoInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\net46\SmartDb.MySql.NetCore.AssemblyInfo.cs
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\net46\SmartDb.MySql.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\net46\SmartDb.MySql.NetCore.pdb

@@ -1,0 +1,9 @@
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\bin\Release\netstandard2.0\SmartDb.Mapper.NetCore.deps.json
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\bin\Release\netstandard2.0\SmartDb.Mapper.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\bin\Release\netstandard2.0\SmartDb.Mapper.NetCore.pdb
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\obj\Release\netstandard2.0\SmartDb.Mapper.NetCore.csprojResolveAssemblyReference.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\obj\Release\netstandard2.0\SmartDb.Mapper.NetCore.csproj.CoreCompileInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\obj\Release\netstandard2.0\SmartDb.Mapper.NetCore.AssemblyInfoInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\obj\Release\netstandard2.0\SmartDb.Mapper.NetCore.AssemblyInfo.cs
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\obj\Release\netstandard2.0\SmartDb.Mapper.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.Mapper.NetCore\obj\Release\netstandard2.0\SmartDb.Mapper.NetCore.pdb

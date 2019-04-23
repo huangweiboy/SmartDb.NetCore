@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461;net46;net452;net451;net45;</TargetFrameworks>
+    <Version>2.13.0</Version>
+    <Description>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、Oracle数据库支持的快速开发和轻量级ORM框架.</Description>
+    <Company>Bruce</Company>
+    <Authors>Bruce</Authors>
+    <Product>SmartDb.NetCore</Product>
+    <PackageReleaseNotes>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、Oracle数据库支持的快速开发和轻量级ORM框架.</PackageReleaseNotes>
+    <PackageTags>SmartDb.NetCore ORM  DoNet DoNetCore SmartDb</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="SmartDb.NetCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SmartDb.Mapper.NetCore" Version="1.9.0" />
+  </ItemGroup>
+
+</Project>

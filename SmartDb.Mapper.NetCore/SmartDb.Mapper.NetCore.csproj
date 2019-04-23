@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461;net46;net452;net451;net45;</TargetFrameworks>
+    <Version>1.9.0</Version>
+    <Authors>Bruce</Authors>
+    <Company>Bruce</Company>
+    <Description>SmartDb.Mapper.NetCore是个基于Emit对象映射框架，能够将基于IDataReader和DataTable转化为实体对象.</Description>
+    <PackageTags>SmartDb.Mapper.NetCore SmartDb NetCore DotNet Emit</PackageTags>
+    <PackageReleaseNotes>SmartDb.Mapper.NetCore是个基于Emit对象映射框架，能够将基于IDataReader和DataTable转化为实体对象.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="SmartDb.Mapper.NetCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

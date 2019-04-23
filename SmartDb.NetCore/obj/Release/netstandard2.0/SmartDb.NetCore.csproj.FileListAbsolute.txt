@@ -1,0 +1,9 @@
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\bin\Release\netstandard2.0\SmartDb.NetCore.deps.json
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\bin\Release\netstandard2.0\SmartDb.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\bin\Release\netstandard2.0\SmartDb.NetCore.pdb
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\netstandard2.0\SmartDb.NetCore.csprojResolveAssemblyReference.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\netstandard2.0\SmartDb.NetCore.csproj.CoreCompileInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\netstandard2.0\SmartDb.NetCore.AssemblyInfoInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\netstandard2.0\SmartDb.NetCore.AssemblyInfo.cs
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\netstandard2.0\SmartDb.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\netstandard2.0\SmartDb.NetCore.pdb

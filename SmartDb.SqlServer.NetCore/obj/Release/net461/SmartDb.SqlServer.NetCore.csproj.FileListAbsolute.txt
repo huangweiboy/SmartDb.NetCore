@@ -1,0 +1,11 @@
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\bin\Release\net461\SmartDb.SqlServer.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\bin\Release\net461\SmartDb.SqlServer.NetCore.pdb
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\bin\Release\net461\SmartDb.Mapper.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\bin\Release\net461\SmartDb.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\bin\Release\net461\System.Data.SqlClient.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\obj\Release\net461\SmartDb.SqlServer.NetCore.csprojResolveAssemblyReference.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\obj\Release\net461\SmartDb.SqlServer.NetCore.csproj.CoreCompileInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\obj\Release\net461\SmartDb.SqlServer.NetCore.AssemblyInfoInputs.cache
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\obj\Release\net461\SmartDb.SqlServer.NetCore.AssemblyInfo.cs
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\obj\Release\net461\SmartDb.SqlServer.NetCore.dll
+F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.SqlServer.NetCore\obj\Release\net461\SmartDb.SqlServer.NetCore.pdb

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.Mapper.NetCore", "SmartDb.Mapper.NetCore\SmartDb.Mapper.NetCore.csproj", "{D8F06E1D-3D69-411A-B0D5-B01060B4F0CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.NetCore", "SmartDb.NetCore\SmartDb.NetCore.csproj", "{25F59461-483D-42ED-8FC7-C0C4F8441121}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.MySql.NetCore", "SmartDb.MySql.NetCore\SmartDb.MySql.NetCore.csproj", "{331E10B5-1A93-4FE8-8581-0509698FA2FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.SqlServer.NetCore", "SmartDb.SqlServer.NetCore\SmartDb.SqlServer.NetCore.csproj", "{5198D2AA-DF7E-4183-9DE1-31E59EF09A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmartDbMyqlConsole", "TestSmartDbMyqlConsole\TestSmartDbMyqlConsole.csproj", "{811B81FF-A7C8-462B-9F6E-8694C680FFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmartDbSqlServerConsole", "TestSmartDbSqlServerConsole\TestSmartDbSqlServerConsole.csproj", "{52603E6F-CBA7-4A27-94CB-1C9E611A289D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8F06E1D-3D69-411A-B0D5-B01060B4F0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F06E1D-3D69-411A-B0D5-B01060B4F0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F06E1D-3D69-411A-B0D5-B01060B4F0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F06E1D-3D69-411A-B0D5-B01060B4F0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F59461-483D-42ED-8FC7-C0C4F8441121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F59461-483D-42ED-8FC7-C0C4F8441121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F59461-483D-42ED-8FC7-C0C4F8441121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F59461-483D-42ED-8FC7-C0C4F8441121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331E10B5-1A93-4FE8-8581-0509698FA2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331E10B5-1A93-4FE8-8581-0509698FA2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331E10B5-1A93-4FE8-8581-0509698FA2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331E10B5-1A93-4FE8-8581-0509698FA2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5198D2AA-DF7E-4183-9DE1-31E59EF09A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5198D2AA-DF7E-4183-9DE1-31E59EF09A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5198D2AA-DF7E-4183-9DE1-31E59EF09A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5198D2AA-DF7E-4183-9DE1-31E59EF09A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{811B81FF-A7C8-462B-9F6E-8694C680FFA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811B81FF-A7C8-462B-9F6E-8694C680FFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811B81FF-A7C8-462B-9F6E-8694C680FFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811B81FF-A7C8-462B-9F6E-8694C680FFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52603E6F-CBA7-4A27-94CB-1C9E611A289D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52603E6F-CBA7-4A27-94CB-1C9E611A289D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52603E6F-CBA7-4A27-94CB-1C9E611A289D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52603E6F-CBA7-4A27-94CB-1C9E611A289D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8112778A-5C0A-472F-9F6F-DA75C72264DB}
+	EndGlobalSection
+EndGlobal
