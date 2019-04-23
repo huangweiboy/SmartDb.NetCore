@@ -1,9 +1,0 @@
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\bin\Release\net451\SmartDb.NetCore.dll
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\bin\Release\net451\SmartDb.NetCore.pdb
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\bin\Release\net451\SmartDb.Mapper.NetCore.dll
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\net451\SmartDb.NetCore.csprojResolveAssemblyReference.cache
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\net451\SmartDb.NetCore.csproj.CoreCompileInputs.cache
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\net451\SmartDb.NetCore.AssemblyInfoInputs.cache
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\net451\SmartDb.NetCore.AssemblyInfo.cs
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\net451\SmartDb.NetCore.dll
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.NetCore\obj\Release\net451\SmartDb.NetCore.pdb

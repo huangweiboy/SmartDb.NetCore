@@ -1,9 +1,0 @@
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\netstandard2.0\SmartDb.MySql.NetCore.deps.json
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\netstandard2.0\SmartDb.MySql.NetCore.dll
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\bin\Release\netstandard2.0\SmartDb.MySql.NetCore.pdb
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\netstandard2.0\SmartDb.MySql.NetCore.csprojResolveAssemblyReference.cache
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\netstandard2.0\SmartDb.MySql.NetCore.csproj.CoreCompileInputs.cache
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\netstandard2.0\SmartDb.MySql.NetCore.AssemblyInfoInputs.cache
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\netstandard2.0\SmartDb.MySql.NetCore.AssemblyInfo.cs
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\netstandard2.0\SmartDb.MySql.NetCore.dll
-F:\work\dotnet-work\SmartDb\netcore\src\SmartDbNetCore\SmartDb.MySql.NetCore\obj\Release\netstandard2.0\SmartDb.MySql.NetCore.pdb
