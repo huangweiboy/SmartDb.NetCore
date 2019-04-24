@@ -266,7 +266,7 @@
           }
         }
       },
-      "SmartDb.Mapper.NetCore/1.9.0": {
+      "SmartDb.Mapper.NetCore/2.30.3": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -278,10 +278,10 @@
           "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.13.0": {
+      "SmartDb.NetCore/2.30.3": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "1.9.0"
+          "SmartDb.Mapper.NetCore": "2.30.3"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
@@ -290,10 +290,10 @@
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
         }
       },
-      "SmartDb.SqlServer.NetCore/2.13.0": {
+      "SmartDb.SqlServer.NetCore/2.30.3": {
         "type": "package",
         "dependencies": {
-          "SmartDb.NetCore": "2.13.0",
+          "SmartDb.NetCore": "2.30.3",
           "System.Data.SqlClient": "4.6.0"
         },
         "compile": {
@@ -1065,51 +1065,36 @@
         "version.txt"
       ]
     },
-    "SmartDb.Mapper.NetCore/1.9.0": {
-      "sha512": "Wwzq2vRDHVr1552p3Z1VRV0v/1JKNgKg7CJgXv+dSGSrGHNrXliHV8i0HLlcStnu1XM9W19JI/JgbnNL7aDZfg==",
+    "SmartDb.Mapper.NetCore/2.30.3": {
+      "sha512": "EFBhq3m1MJrYqOH3rxI6rfTAgVnvwJwj09ZNDsR+x3Zq1z5C879Cfu8yBFHWGdNjVE0v6d0wBbl9hAkqoKVjug==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/1.9.0",
+      "path": "smartdb.mapper.netcore/2.30.3",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net45/SmartDb.Mapper.NetCore.dll",
-        "lib/net451/SmartDb.Mapper.NetCore.dll",
-        "lib/net452/SmartDb.Mapper.NetCore.dll",
-        "lib/net46/SmartDb.Mapper.NetCore.dll",
-        "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.1.9.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.30.3.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
-    "SmartDb.NetCore/2.13.0": {
-      "sha512": "3QzXd/uDTEKEkLUqpeV4+dacbp3XnAudTKEnqbSkrV+CT4NL28Tc/lDJ++6bRmARLrmMvi4fOhqBYEwTZgzPpA==",
+    "SmartDb.NetCore/2.30.3": {
+      "sha512": "Cf0UsEuP1FjDRqKlzQv7e/HKpurhDXE5L2QE4Ylza+4w/JVwBnhZJtEsggcwjYqQS78vv7g3j7FmGYu0Y9d0sg==",
       "type": "package",
-      "path": "smartdb.netcore/2.13.0",
+      "path": "smartdb.netcore/2.30.3",
       "files": [
         ".signature.p7s",
-        "lib/net45/SmartDb.NetCore.dll",
-        "lib/net451/SmartDb.NetCore.dll",
-        "lib/net452/SmartDb.NetCore.dll",
-        "lib/net46/SmartDb.NetCore.dll",
-        "lib/net461/SmartDb.NetCore.dll",
         "lib/netstandard2.0/SmartDb.NetCore.dll",
-        "smartdb.netcore.2.13.0.nupkg.sha512",
+        "smartdb.netcore.2.30.3.nupkg.sha512",
         "smartdb.netcore.nuspec"
       ]
     },
-    "SmartDb.SqlServer.NetCore/2.13.0": {
-      "sha512": "l5osNtp77P9Tlx7P5uctFlKftGYUIkEwj3fF7fJV9nQNd0YQCjgb4BYhC7sskBIXfOn27Fcbqr7SykDmOESFNA==",
+    "SmartDb.SqlServer.NetCore/2.30.3": {
+      "sha512": "wMGCxxYF7Sdf82DTAJrcguuMOJxQ3Nq1tymsG8ChcHq/FPLN/QfZpf771qVT214EbW2JFCgCu+1ziCK99iw37w==",
       "type": "package",
-      "path": "smartdb.sqlserver.netcore/2.13.0",
+      "path": "smartdb.sqlserver.netcore/2.30.3",
       "files": [
         ".signature.p7s",
-        "lib/net451/SmartDb.SqlServer.NetCore.dll",
-        "lib/net452/SmartDb.SqlServer.NetCore.dll",
-        "lib/net46/SmartDb.SqlServer.NetCore.dll",
-        "lib/net461/SmartDb.SqlServer.NetCore.dll",
         "lib/netstandard2.0/SmartDb.SqlServer.NetCore.dll",
-        "smartdb.sqlserver.netcore.2.13.0.nupkg.sha512",
+        "smartdb.sqlserver.netcore.2.30.3.nupkg.sha512",
         "smartdb.sqlserver.netcore.nuspec"
       ]
     },
@@ -1878,7 +1863,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "SmartDb.SqlServer.NetCore >= 2.13.0"
+      "SmartDb.SqlServer.NetCore >= 2.30.3"
     ]
   },
   "packageFolders": {
@@ -1936,7 +1921,7 @@
           },
           "SmartDb.SqlServer.NetCore": {
             "target": "Package",
-            "version": "[2.13.0, )"
+            "version": "[2.30.3, )"
           }
         },
         "imports": [

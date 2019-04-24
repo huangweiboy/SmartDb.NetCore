@@ -1,121 +1,6 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.5": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net45/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net45/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.5.1": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net451/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net451/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.5.2": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net452/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net452/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.6": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net46/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net46/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.6.1": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net461/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net461/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
     ".NETStandard,Version=v2.0": {
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
@@ -150,7 +35,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "SmartDb.Mapper.NetCore/1.9.0": {
+      "SmartDb.Mapper.NetCore/2.30.3": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -419,20 +304,14 @@
         "netstandard.library.nuspec"
       ]
     },
-    "SmartDb.Mapper.NetCore/1.9.0": {
-      "sha512": "Wwzq2vRDHVr1552p3Z1VRV0v/1JKNgKg7CJgXv+dSGSrGHNrXliHV8i0HLlcStnu1XM9W19JI/JgbnNL7aDZfg==",
+    "SmartDb.Mapper.NetCore/2.30.3": {
+      "sha512": "EFBhq3m1MJrYqOH3rxI6rfTAgVnvwJwj09ZNDsR+x3Zq1z5C879Cfu8yBFHWGdNjVE0v6d0wBbl9hAkqoKVjug==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/1.9.0",
+      "path": "smartdb.mapper.netcore/2.30.3",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net45/SmartDb.Mapper.NetCore.dll",
-        "lib/net451/SmartDb.Mapper.NetCore.dll",
-        "lib/net452/SmartDb.Mapper.NetCore.dll",
-        "lib/net46/SmartDb.Mapper.NetCore.dll",
-        "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.1.9.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.30.3.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
@@ -967,24 +846,9 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.5": [
-      "SmartDb.Mapper.NetCore >= 1.9.0"
-    ],
-    ".NETFramework,Version=v4.5.1": [
-      "SmartDb.Mapper.NetCore >= 1.9.0"
-    ],
-    ".NETFramework,Version=v4.5.2": [
-      "SmartDb.Mapper.NetCore >= 1.9.0"
-    ],
-    ".NETFramework,Version=v4.6": [
-      "SmartDb.Mapper.NetCore >= 1.9.0"
-    ],
-    ".NETFramework,Version=v4.6.1": [
-      "SmartDb.Mapper.NetCore >= 1.9.0"
-    ],
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "SmartDb.Mapper.NetCore >= 1.9.0"
+      "SmartDb.Mapper.NetCore >= 2.30.3"
     ]
   },
   "packageFolders": {
@@ -993,7 +857,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.13.0",
+    "version": "2.30.3",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },
@@ -1004,7 +868,6 @@
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.NetCore\\obj\\",
       "projectStyle": "PackageReference",
-      "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1015,11 +878,6 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
-        "net45",
-        "net451",
-        "net452",
-        "net46",
-        "net461",
         "netstandard2.0"
       ],
       "sources": {
@@ -1027,21 +885,6 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net45": {
-          "projectReferences": {}
-        },
-        "net451": {
-          "projectReferences": {}
-        },
-        "net452": {
-          "projectReferences": {}
-        },
-        "net46": {
-          "projectReferences": {}
-        },
-        "net461": {
-          "projectReferences": {}
-        },
         "netstandard2.0": {
           "projectReferences": {}
         }
@@ -1053,46 +896,6 @@
       }
     },
     "frameworks": {
-      "net45": {
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": {
-            "target": "Package",
-            "version": "[1.9.0, )"
-          }
-        }
-      },
-      "net451": {
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": {
-            "target": "Package",
-            "version": "[1.9.0, )"
-          }
-        }
-      },
-      "net452": {
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": {
-            "target": "Package",
-            "version": "[1.9.0, )"
-          }
-        }
-      },
-      "net46": {
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": {
-            "target": "Package",
-            "version": "[1.9.0, )"
-          }
-        }
-      },
-      "net461": {
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": {
-            "target": "Package",
-            "version": "[1.9.0, )"
-          }
-        }
-      },
       "netstandard2.0": {
         "dependencies": {
           "NETStandard.Library": {
@@ -1103,7 +906,7 @@
           },
           "SmartDb.Mapper.NetCore": {
             "target": "Package",
-            "version": "[1.9.0, )"
+            "version": "[2.30.3, )"
           }
         },
         "imports": [

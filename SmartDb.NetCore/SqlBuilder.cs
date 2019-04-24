@@ -21,7 +21,7 @@ namespace SmartDb.NetCore
 
         public SqlBuilder()
         {
-            IsStartCache = true;
+            IsStartCache = false;
         }
 
         /// <summary>

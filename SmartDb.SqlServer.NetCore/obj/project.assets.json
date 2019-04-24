@@ -1,279 +1,6 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.5.1": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net451/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net451/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "SmartDb.NetCore/2.13.0": {
-        "type": "package",
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": "1.9.0"
-        },
-        "compile": {
-          "lib/net451/SmartDb.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net451/SmartDb.NetCore.dll": {}
-        }
-      },
-      "System.Data.Common/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Data",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net451/System.Data.Common.dll": {}
-        },
-        "runtime": {
-          "lib/net451/System.Data.Common.dll": {}
-        }
-      },
-      "System.Data.SqlClient/4.6.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Data.Common": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System.Data",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net451/System.Data.SqlClient.dll": {}
-        },
-        "runtime": {
-          "lib/net451/System.Data.SqlClient.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net451/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.5.2": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net452/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net452/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "SmartDb.NetCore/2.13.0": {
-        "type": "package",
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": "1.9.0"
-        },
-        "compile": {
-          "lib/net452/SmartDb.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net452/SmartDb.NetCore.dll": {}
-        }
-      },
-      "System.Data.Common/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Data",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net451/System.Data.Common.dll": {}
-        },
-        "runtime": {
-          "lib/net451/System.Data.Common.dll": {}
-        }
-      },
-      "System.Data.SqlClient/4.6.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Data.Common": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System.Data",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net451/System.Data.SqlClient.dll": {}
-        },
-        "runtime": {
-          "lib/net451/System.Data.SqlClient.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net451/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.6": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net46/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net46/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "SmartDb.NetCore/2.13.0": {
-        "type": "package",
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": "1.9.0"
-        },
-        "compile": {
-          "lib/net46/SmartDb.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net46/SmartDb.NetCore.dll": {}
-        }
-      },
-      "System.Data.Common/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Data",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net451/System.Data.Common.dll": {}
-        },
-        "runtime": {
-          "lib/net451/System.Data.Common.dll": {}
-        }
-      },
-      "System.Data.SqlClient/4.6.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Data.Common": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System.Data",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Data.SqlClient.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Data.SqlClient.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net46/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
-    ".NETFramework,Version=v4.6.1": {
-      "SmartDb.Mapper.NetCore/1.9.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
-        "compile": {
-          "lib/net461/SmartDb.Mapper.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net461/SmartDb.Mapper.NetCore.dll": {}
-        }
-      },
-      "SmartDb.NetCore/2.13.0": {
-        "type": "package",
-        "dependencies": {
-          "SmartDb.Mapper.NetCore": "1.9.0"
-        },
-        "compile": {
-          "lib/net461/SmartDb.NetCore.dll": {}
-        },
-        "runtime": {
-          "lib/net461/SmartDb.NetCore.dll": {}
-        }
-      },
-      "System.Data.SqlClient/4.6.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Data",
-          "System.Xml",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net461/System.Data.SqlClient.dll": {}
-        },
-        "runtime": {
-          "lib/net461/System.Data.SqlClient.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/net461/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      }
-    },
     ".NETStandard,Version=v2.0": {
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
@@ -368,7 +95,7 @@
           }
         }
       },
-      "SmartDb.Mapper.NetCore/1.9.0": {
+      "SmartDb.Mapper.NetCore/2.30.3": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -380,10 +107,10 @@
           "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.13.0": {
+      "SmartDb.NetCore/2.30.3": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "1.9.0"
+          "SmartDb.Mapper.NetCore": "2.30.3"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
@@ -877,36 +604,25 @@
         "version.txt"
       ]
     },
-    "SmartDb.Mapper.NetCore/1.9.0": {
-      "sha512": "Wwzq2vRDHVr1552p3Z1VRV0v/1JKNgKg7CJgXv+dSGSrGHNrXliHV8i0HLlcStnu1XM9W19JI/JgbnNL7aDZfg==",
+    "SmartDb.Mapper.NetCore/2.30.3": {
+      "sha512": "EFBhq3m1MJrYqOH3rxI6rfTAgVnvwJwj09ZNDsR+x3Zq1z5C879Cfu8yBFHWGdNjVE0v6d0wBbl9hAkqoKVjug==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/1.9.0",
+      "path": "smartdb.mapper.netcore/2.30.3",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net45/SmartDb.Mapper.NetCore.dll",
-        "lib/net451/SmartDb.Mapper.NetCore.dll",
-        "lib/net452/SmartDb.Mapper.NetCore.dll",
-        "lib/net46/SmartDb.Mapper.NetCore.dll",
-        "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.1.9.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.30.3.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
-    "SmartDb.NetCore/2.13.0": {
-      "sha512": "3QzXd/uDTEKEkLUqpeV4+dacbp3XnAudTKEnqbSkrV+CT4NL28Tc/lDJ++6bRmARLrmMvi4fOhqBYEwTZgzPpA==",
+    "SmartDb.NetCore/2.30.3": {
+      "sha512": "Cf0UsEuP1FjDRqKlzQv7e/HKpurhDXE5L2QE4Ylza+4w/JVwBnhZJtEsggcwjYqQS78vv7g3j7FmGYu0Y9d0sg==",
       "type": "package",
-      "path": "smartdb.netcore/2.13.0",
+      "path": "smartdb.netcore/2.30.3",
       "files": [
         ".signature.p7s",
-        "lib/net45/SmartDb.NetCore.dll",
-        "lib/net451/SmartDb.NetCore.dll",
-        "lib/net452/SmartDb.NetCore.dll",
-        "lib/net46/SmartDb.NetCore.dll",
-        "lib/net461/SmartDb.NetCore.dll",
         "lib/netstandard2.0/SmartDb.NetCore.dll",
-        "smartdb.netcore.2.13.0.nupkg.sha512",
+        "smartdb.netcore.2.30.3.nupkg.sha512",
         "smartdb.netcore.nuspec"
       ]
     },
@@ -933,55 +649,6 @@
         "system.buffers.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.Data.Common/4.3.0": {
-      "sha512": "lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
-      "type": "package",
-      "path": "system.data.common/4.3.0",
-      "files": [
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net451/System.Data.Common.dll",
-        "lib/netstandard1.2/System.Data.Common.dll",
-        "lib/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net451/System.Data.Common.dll",
-        "ref/netstandard1.2/System.Data.Common.dll",
-        "ref/netstandard1.2/System.Data.Common.xml",
-        "ref/netstandard1.2/de/System.Data.Common.xml",
-        "ref/netstandard1.2/es/System.Data.Common.xml",
-        "ref/netstandard1.2/fr/System.Data.Common.xml",
-        "ref/netstandard1.2/it/System.Data.Common.xml",
-        "ref/netstandard1.2/ja/System.Data.Common.xml",
-        "ref/netstandard1.2/ko/System.Data.Common.xml",
-        "ref/netstandard1.2/ru/System.Data.Common.xml",
-        "ref/netstandard1.2/zh-hans/System.Data.Common.xml",
-        "ref/netstandard1.2/zh-hant/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.dll",
-        "ref/portable-net451+win8+wp8+wpa81/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/de/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/es/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/fr/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/it/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/ja/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/ko/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/ru/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/zh-hans/System.Data.Common.xml",
-        "ref/portable-net451+win8+wp8+wpa81/zh-hant/System.Data.Common.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.data.common.4.3.0.nupkg.sha512",
-        "system.data.common.nuspec"
       ]
     },
     "System.Data.SqlClient/4.6.0": {
@@ -1836,25 +1503,9 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.5.1": [
-      "SmartDb.NetCore >= 2.13.0",
-      "System.Data.SqlClient >= 4.6.0"
-    ],
-    ".NETFramework,Version=v4.5.2": [
-      "SmartDb.NetCore >= 2.13.0",
-      "System.Data.SqlClient >= 4.6.0"
-    ],
-    ".NETFramework,Version=v4.6": [
-      "SmartDb.NetCore >= 2.13.0",
-      "System.Data.SqlClient >= 4.6.0"
-    ],
-    ".NETFramework,Version=v4.6.1": [
-      "SmartDb.NetCore >= 2.13.0",
-      "System.Data.SqlClient >= 4.6.0"
-    ],
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "SmartDb.NetCore >= 2.13.0",
+      "SmartDb.NetCore >= 2.30.3",
       "System.Data.SqlClient >= 4.6.0"
     ]
   },
@@ -1864,7 +1515,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.13.0",
+    "version": "2.30.3",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },
@@ -1875,7 +1526,6 @@
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
       "outputPath": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.SqlServer.NetCore\\obj\\",
       "projectStyle": "PackageReference",
-      "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1886,10 +1536,6 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
-        "net451",
-        "net452",
-        "net46",
-        "net461",
         "netstandard2.0"
       ],
       "sources": {
@@ -1897,18 +1543,6 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net451": {
-          "projectReferences": {}
-        },
-        "net452": {
-          "projectReferences": {}
-        },
-        "net46": {
-          "projectReferences": {}
-        },
-        "net461": {
-          "projectReferences": {}
-        },
         "netstandard2.0": {
           "projectReferences": {}
         }
@@ -1920,54 +1554,6 @@
       }
     },
     "frameworks": {
-      "net451": {
-        "dependencies": {
-          "SmartDb.NetCore": {
-            "target": "Package",
-            "version": "[2.13.0, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.6.0, )"
-          }
-        }
-      },
-      "net452": {
-        "dependencies": {
-          "SmartDb.NetCore": {
-            "target": "Package",
-            "version": "[2.13.0, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.6.0, )"
-          }
-        }
-      },
-      "net46": {
-        "dependencies": {
-          "SmartDb.NetCore": {
-            "target": "Package",
-            "version": "[2.13.0, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.6.0, )"
-          }
-        }
-      },
-      "net461": {
-        "dependencies": {
-          "SmartDb.NetCore": {
-            "target": "Package",
-            "version": "[2.13.0, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.6.0, )"
-          }
-        }
-      },
       "netstandard2.0": {
         "dependencies": {
           "NETStandard.Library": {
@@ -1978,7 +1564,7 @@
           },
           "SmartDb.NetCore": {
             "target": "Package",
-            "version": "[2.13.0, )"
+            "version": "[2.30.3, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",

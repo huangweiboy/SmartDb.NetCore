@@ -1,22 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net461;net46;net452;</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>SmartDb.MySql.NetCore</PackageId>
+    <Version>2.30.3</Version>
     <Description>SmartDb.MySql.NetCore是一套基于DoNet和DoNetCore对MySql数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架.</Description>
+    <PackageReleaseNotes>SmartDb.MySql.NetCore是一套基于DoNet和DoNetCore对MySql数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架.</PackageReleaseNotes>
     <Authors>Bruce</Authors>
     <Company>Bruce</Company>
-    <PackageReleaseNotes>SmartDb.MySql.NetCore是一套基于DoNet和DoNetCore对MySql数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架.</PackageReleaseNotes>
-    <PackageTags>SmartDb.MySql.NetCore ORM DoNet DoNetCore MySql</PackageTags>
-    <Version>2.13.0</Version>
+    <PackageProjectUrl>https://github.com/joyet/SmartDb.NetCore</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="SmartDb.MySql.NetCore.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MySql.Data" Version="8.0.15" />
-    <PackageReference Include="SmartDb.NetCore" Version="2.13.0" />
+    <PackageReference Include="SmartDb.NetCore" Version="2.30.3" />
   </ItemGroup>
 
 </Project>

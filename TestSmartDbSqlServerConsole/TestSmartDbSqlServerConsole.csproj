@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SmartDb.SqlServer.NetCore" Version="2.13.0" />
+    <PackageReference Include="SmartDb.SqlServer.NetCore" Version="2.30.3" />
   </ItemGroup>
 
 </Project>
