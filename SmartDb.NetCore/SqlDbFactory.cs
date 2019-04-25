@@ -10,11 +10,6 @@ namespace SmartDb.NetCore
    public abstract  class SqlDbFactory
     { 
         /// <summary>
-        /// 数据库类型
-        /// </summary>
-        public virtual  DbTypeEnume DbType { get; set; }
-
-        /// <summary>
         /// 创建数据库连接对象
         /// </summary>
         /// <param name="connectionString"></param>

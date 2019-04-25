@@ -1,6 +1,61 @@
 {
   "version": 3,
   "targets": {
+    ".NETFramework,Version=v4.5": {
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1": {
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2": {
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1": {
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
     ".NETStandard,Version=v2.0": {
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
@@ -823,6 +878,21 @@
     }
   },
   "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5": [
+      "System.Reflection.Emit.Lightweight >= 4.3.0"
+    ],
+    ".NETFramework,Version=v4.5.1": [
+      "System.Reflection.Emit.Lightweight >= 4.3.0"
+    ],
+    ".NETFramework,Version=v4.5.2": [
+      "System.Reflection.Emit.Lightweight >= 4.3.0"
+    ],
+    ".NETFramework,Version=v4.6": [
+      "System.Reflection.Emit.Lightweight >= 4.3.0"
+    ],
+    ".NETFramework,Version=v4.6.1": [
+      "System.Reflection.Emit.Lightweight >= 4.3.0"
+    ],
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "System.Reflection.Emit.Lightweight >= 4.3.0"
@@ -834,17 +904,18 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.30.3",
+    "version": "2.34.0",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.Mapper.NetCore\\SmartDb.Mapper.NetCore.csproj",
+      "projectUniqueName": "F:\\work\\dotnetcore-work\\SmartDb-work\\SmartDb.NetCore\\SmartDb.Mapper.NetCore\\SmartDb.Mapper.NetCore.csproj",
       "projectName": "SmartDb.Mapper.NetCore",
-      "projectPath": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.Mapper.NetCore\\SmartDb.Mapper.NetCore.csproj",
+      "projectPath": "F:\\work\\dotnetcore-work\\SmartDb-work\\SmartDb.NetCore\\SmartDb.Mapper.NetCore\\SmartDb.Mapper.NetCore.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.Mapper.NetCore\\obj\\",
+      "outputPath": "F:\\work\\dotnetcore-work\\SmartDb-work\\SmartDb.NetCore\\SmartDb.Mapper.NetCore\\obj\\",
       "projectStyle": "PackageReference",
+      "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -855,6 +926,11 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
+        "net4.5.1",
+        "net4.5.2",
+        "net4.6.1",
+        "net45",
+        "net46",
         "netstandard2.0"
       ],
       "sources": {
@@ -862,6 +938,21 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
+        "net45": {
+          "projectReferences": {}
+        },
+        "net451": {
+          "projectReferences": {}
+        },
+        "net452": {
+          "projectReferences": {}
+        },
+        "net46": {
+          "projectReferences": {}
+        },
+        "net461": {
+          "projectReferences": {}
+        },
         "netstandard2.0": {
           "projectReferences": {}
         }
@@ -873,6 +964,46 @@
       }
     },
     "frameworks": {
+      "net45": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        }
+      },
+      "net451": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        }
+      },
+      "net452": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        }
+      },
+      "net46": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        }
+      },
+      "net461": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          }
+        }
+      },
       "netstandard2.0": {
         "dependencies": {
           "NETStandard.Library": {

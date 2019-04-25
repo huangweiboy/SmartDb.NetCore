@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDb.Mapper.NetCore", "SmartDb.Mapper.NetCore\SmartDb.Mapper.NetCore.csproj", "{CDAB1437-E5BF-4C1C-A9D5-19F3D092761B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.Mapper.NetCore", "SmartDb.Mapper.NetCore\SmartDb.Mapper.NetCore.csproj", "{CDAB1437-E5BF-4C1C-A9D5-19F3D092761B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDb.NetCore", "SmartDb.NetCore\SmartDb.NetCore.csproj", "{D8BE1E4C-C4FD-45B1-8EDE-C3BC10EA718C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.NetCore", "SmartDb.NetCore\SmartDb.NetCore.csproj", "{D8BE1E4C-C4FD-45B1-8EDE-C3BC10EA718C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDb.MySql.NetCore", "SmartDb.MySql.NetCore\SmartDb.MySql.NetCore.csproj", "{94DF665B-657C-4A55-BFA2-E89304CD484D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.MySql.NetCore", "SmartDb.MySql.NetCore\SmartDb.MySql.NetCore.csproj", "{94DF665B-657C-4A55-BFA2-E89304CD484D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDb.SqlServer.NetCore", "SmartDb.SqlServer.NetCore\SmartDb.SqlServer.NetCore.csproj", "{94851CF5-1D06-4F65-9BDA-7DE730956CFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.SqlServer.NetCore", "SmartDb.SqlServer.NetCore\SmartDb.SqlServer.NetCore.csproj", "{94851CF5-1D06-4F65-9BDA-7DE730956CFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmartDbMyqlConsole", "TestSmartDbMyqlConsole\TestSmartDbMyqlConsole.csproj", "{7515153E-31C8-4D07-A161-CA4B75A0AF0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSmartDbMyqlConsole", "TestSmartDbMyqlConsole\TestSmartDbMyqlConsole.csproj", "{7515153E-31C8-4D07-A161-CA4B75A0AF0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmartDbSqlServerConsole", "TestSmartDbSqlServerConsole\TestSmartDbSqlServerConsole.csproj", "{A64AA1A2-E261-4365-9DC8-D00B4A97B3DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSmartDbSqlServerConsole", "TestSmartDbSqlServerConsole\TestSmartDbSqlServerConsole.csproj", "{A64AA1A2-E261-4365-9DC8-D00B4A97B3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDb.SQLite.NetCore", "SmartDb.SQLite.NetCore\SmartDb.SQLite.NetCore.csproj", "{DCD10A6C-AFBF-4971-8337-AD69CFB0C0C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmartDbSqliteConsole", "TestSmartDbSqliteConsole\TestSmartDbSqliteConsole.csproj", "{CD495844-8C81-41E8-9EDD-999CA2A29D92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{A64AA1A2-E261-4365-9DC8-D00B4A97B3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A64AA1A2-E261-4365-9DC8-D00B4A97B3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A64AA1A2-E261-4365-9DC8-D00B4A97B3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD10A6C-AFBF-4971-8337-AD69CFB0C0C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD10A6C-AFBF-4971-8337-AD69CFB0C0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD10A6C-AFBF-4971-8337-AD69CFB0C0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD10A6C-AFBF-4971-8337-AD69CFB0C0C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD495844-8C81-41E8-9EDD-999CA2A29D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD495844-8C81-41E8-9EDD-999CA2A29D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD495844-8C81-41E8-9EDD-999CA2A29D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD495844-8C81-41E8-9EDD-999CA2A29D92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

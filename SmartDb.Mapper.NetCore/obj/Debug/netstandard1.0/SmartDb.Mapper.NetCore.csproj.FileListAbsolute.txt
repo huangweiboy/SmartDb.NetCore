@@ -1,0 +1,4 @@
+F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\obj\Debug\netstandard1.0\SmartDb.Mapper.NetCore.csprojResolveAssemblyReference.cache
+F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\obj\Debug\netstandard1.0\SmartDb.Mapper.NetCore.csproj.CoreCompileInputs.cache
+F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\obj\Debug\netstandard1.0\SmartDb.Mapper.NetCore.AssemblyInfoInputs.cache
+F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\obj\Debug\netstandard1.0\SmartDb.Mapper.NetCore.AssemblyInfo.cs

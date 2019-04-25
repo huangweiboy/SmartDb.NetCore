@@ -11,10 +11,7 @@ namespace SmartDb.MySql.NetCore
         public MySqlDb(string connectionString = "")
         {
             ConnectionString = connectionString;
-            var dbFactory = new MySqlFactory()
-            {
-                DbType = DbTypeEnume.MySql
-            };
+            var dbFactory = new MySqlFactory();
             DbHelper.DbFactory = dbFactory;
             DbBuilder = new MySqlBuilder();
             DbBuilder.DbFactory = dbFactory;

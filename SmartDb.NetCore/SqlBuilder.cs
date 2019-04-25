@@ -165,7 +165,6 @@ namespace SmartDb.NetCore
             sqlBuild.Append(autoIncrementSql);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams
@@ -208,7 +207,6 @@ namespace SmartDb.NetCore
             dbParams.Add(dbParam);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams
@@ -241,7 +239,6 @@ namespace SmartDb.NetCore
             HandleWhereParam(whereSql,whereColumns, ref sqlBuild, ref dbParams);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams
@@ -292,7 +289,6 @@ namespace SmartDb.NetCore
             dbParams.Add(dbParam);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams,
@@ -336,7 +332,6 @@ namespace SmartDb.NetCore
             HandleWhereParam(whereSql, whereColumns, ref sqlBuild, ref dbParams);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams,
@@ -375,7 +370,6 @@ namespace SmartDb.NetCore
             dbParams.Add(dbParam);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams,
@@ -414,7 +408,6 @@ namespace SmartDb.NetCore
             HandleWhereParam(whereSql,whereColumns,ref sqlBuild,ref dbParams);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams,
@@ -460,7 +453,6 @@ namespace SmartDb.NetCore
             HandleWhereParam(whereSql,whereColumns, ref sqlBuild, ref dbParams);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sqlBuild.ToString(),
                 DbParams = dbParams,
@@ -501,7 +493,6 @@ namespace SmartDb.NetCore
             }
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity,
                 CommandText = sql,
                 DbParams = dbParams,

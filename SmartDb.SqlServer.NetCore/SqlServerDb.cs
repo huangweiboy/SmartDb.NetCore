@@ -12,10 +12,7 @@ namespace SmartDb.SqlServer.NetCore
         public SqlServerDb(string connectionString="")
         {
             ConnectionString = connectionString;
-            var dbFactory = new SqlServerFactory()
-            {
-                DbType = DbTypeEnume.SqlServer
-            };
+            var dbFactory = new SqlServerFactory();
             DbHelper.DbFactory = dbFactory;
             DbBuilder = new SqlServerBuilder();
             DbBuilder.DbFactory = dbFactory;

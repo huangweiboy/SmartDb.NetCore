@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SmartDb.NetCore</id>
+    <version>2.34.0</version>
+    <authors>Bruce</authors>
+    <owners>Bruce</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/joyet/SmartDb.NetCore/</projectUrl>
+    <description>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、Oracle数据库支持的快速开发和轻量级ORM框架.</description>
+    <releaseNotes>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、Oracle数据库支持的快速开发和轻量级ORM框架.</releaseNotes>
+    <tags>SmartDb.NetCore ORM  DoNet DoNetCore SmartDb</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="SmartDb.Mapper.NetCore" version="2.34.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="SmartDb.Mapper.NetCore" version="2.34.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="SmartDb.Mapper.NetCore" version="2.34.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="SmartDb.Mapper.NetCore" version="2.34.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="SmartDb.Mapper.NetCore" version="2.34.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="SmartDb.Mapper.NetCore" version="2.34.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.NetCore\bin\Release\net4.5.1\SmartDb.NetCore.dll" target="lib\net451\SmartDb.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.NetCore\bin\Release\net4.5.2\SmartDb.NetCore.dll" target="lib\net452\SmartDb.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.NetCore\bin\Release\net4.6.1\SmartDb.NetCore.dll" target="lib\net461\SmartDb.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.NetCore\bin\Release\net45\SmartDb.NetCore.dll" target="lib\net45\SmartDb.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.NetCore\bin\Release\net46\SmartDb.NetCore.dll" target="lib\net46\SmartDb.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.NetCore\bin\Release\netstandard2.0\SmartDb.NetCore.dll" target="lib\netstandard2.0\SmartDb.NetCore.dll" />
+  </files>
+</package>

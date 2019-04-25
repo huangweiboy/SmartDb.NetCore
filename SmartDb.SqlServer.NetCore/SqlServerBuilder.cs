@@ -34,7 +34,6 @@ namespace SmartDb.SqlServer.NetCore
             var tableEntity = attributeBuilder.GetTableInfo(type);
             dbEntity = new DbEntity()
             {
-                DbType = DbFactory.DbType,
                 TableEntity = tableEntity
             };
             int startNum = pageSize * (pageIndex - 1) + 1;

@@ -1,6 +1,216 @@
 {
   "version": 3,
   "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "Google.Protobuf/3.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MySql.Data/8.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.5.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.ComponentModel",
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration",
+          "System.Configuration.Install",
+          "System.Data",
+          "System.Drawing",
+          "System.Drawing.Design",
+          "System.Management",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net452/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Data.dll": {}
+        }
+      },
+      "SmartDb.Mapper.NetCore/2.34.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "compile": {
+          "lib/net452/SmartDb.Mapper.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net452/SmartDb.Mapper.NetCore.dll": {}
+        }
+      },
+      "SmartDb.NetCore/2.42.0": {
+        "type": "package",
+        "dependencies": {
+          "SmartDb.Mapper.NetCore": "2.34.0"
+        },
+        "compile": {
+          "lib/net452/SmartDb.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net452/SmartDb.NetCore.dll": {}
+        }
+      },
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6": {
+      "Google.Protobuf/3.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MySql.Data/8.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.5.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.ComponentModel",
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration",
+          "System.Configuration.Install",
+          "System.Data",
+          "System.Drawing",
+          "System.Drawing.Design",
+          "System.Management",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net452/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Data.dll": {}
+        }
+      },
+      "SmartDb.Mapper.NetCore/2.34.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "compile": {
+          "lib/net46/SmartDb.Mapper.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net46/SmartDb.Mapper.NetCore.dll": {}
+        }
+      },
+      "SmartDb.NetCore/2.42.0": {
+        "type": "package",
+        "dependencies": {
+          "SmartDb.Mapper.NetCore": "2.34.0"
+        },
+        "compile": {
+          "lib/net46/SmartDb.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net46/SmartDb.NetCore.dll": {}
+        }
+      },
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1": {
+      "Google.Protobuf/3.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MySql.Data/8.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Google.Protobuf": "3.5.1"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.ComponentModel",
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration",
+          "System.Configuration.Install",
+          "System.Data",
+          "System.Drawing",
+          "System.Drawing.Design",
+          "System.Management",
+          "System.Transactions",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net452/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net452/MySql.Data.dll": {}
+        }
+      },
+      "SmartDb.Mapper.NetCore/2.34.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        },
+        "compile": {
+          "lib/net461/SmartDb.Mapper.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net461/SmartDb.Mapper.NetCore.dll": {}
+        }
+      },
+      "SmartDb.NetCore/2.42.0": {
+        "type": "package",
+        "dependencies": {
+          "SmartDb.Mapper.NetCore": "2.34.0"
+        },
+        "compile": {
+          "lib/net461/SmartDb.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net461/SmartDb.NetCore.dll": {}
+        }
+      },
+      "System.Reflection.Emit.Lightweight/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    },
     ".NETStandard,Version=v2.0": {
       "Google.Protobuf/3.5.1": {
         "type": "package",
@@ -62,7 +272,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.30.3": {
+      "SmartDb.Mapper.NetCore/2.34.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -74,10 +284,10 @@
           "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.30.3": {
+      "SmartDb.NetCore/2.42.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.30.3"
+          "SmartDb.Mapper.NetCore": "2.34.0"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
@@ -321,6 +531,7 @@
       "type": "package",
       "path": "mysql.data/8.0.15",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net452/MySql.Data.dll",
         "lib/net452/MySql.Data.xml",
@@ -462,25 +673,36 @@
         "netstandard.library.nuspec"
       ]
     },
-    "SmartDb.Mapper.NetCore/2.30.3": {
-      "sha512": "EFBhq3m1MJrYqOH3rxI6rfTAgVnvwJwj09ZNDsR+x3Zq1z5C879Cfu8yBFHWGdNjVE0v6d0wBbl9hAkqoKVjug==",
+    "SmartDb.Mapper.NetCore/2.34.0": {
+      "sha512": "OnH8SlgeblOz4mLz/E8r8MetJpicB50Jt8LBdyWn1c8CdP3le/E2sg2cRFqFP8GXMkWvQCGA5kQtBDGRUyC+mA==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/2.30.3",
+      "path": "smartdb.mapper.netcore/2.34.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
+        "lib/net45/SmartDb.Mapper.NetCore.dll",
+        "lib/net451/SmartDb.Mapper.NetCore.dll",
+        "lib/net452/SmartDb.Mapper.NetCore.dll",
+        "lib/net46/SmartDb.Mapper.NetCore.dll",
+        "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.2.30.3.nupkg.sha512",
+        "smartdb.mapper.netcore.2.34.0.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
-    "SmartDb.NetCore/2.30.3": {
-      "sha512": "Cf0UsEuP1FjDRqKlzQv7e/HKpurhDXE5L2QE4Ylza+4w/JVwBnhZJtEsggcwjYqQS78vv7g3j7FmGYu0Y9d0sg==",
+    "SmartDb.NetCore/2.42.0": {
+      "sha512": "Vt5++OGMJoOuf7H1JFpzNU+pgEnvfiQfubbJzNW8LNm+ZoSQEIiVPu8lzyMxWAJipnyt++uaqrSPQHIXu61Xmw==",
       "type": "package",
-      "path": "smartdb.netcore/2.30.3",
+      "path": "smartdb.netcore/2.42.0",
       "files": [
         ".signature.p7s",
+        "lib/net45/SmartDb.NetCore.dll",
+        "lib/net451/SmartDb.NetCore.dll",
+        "lib/net452/SmartDb.NetCore.dll",
+        "lib/net46/SmartDb.NetCore.dll",
+        "lib/net461/SmartDb.NetCore.dll",
         "lib/netstandard2.0/SmartDb.NetCore.dll",
-        "smartdb.netcore.2.30.3.nupkg.sha512",
+        "smartdb.netcore.2.42.0.nupkg.sha512",
         "smartdb.netcore.nuspec"
       ]
     },
@@ -903,6 +1125,7 @@
       "type": "package",
       "path": "system.security.accesscontrol/4.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -981,6 +1204,7 @@
       "type": "package",
       "path": "system.security.permissions/4.4.1",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1107,6 +1331,7 @@
       "type": "package",
       "path": "system.text.encoding.codepages/4.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1218,10 +1443,22 @@
     }
   },
   "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5.2": [
+      "MySql.Data >= 8.0.15",
+      "SmartDb.NetCore >= 2.42.0"
+    ],
+    ".NETFramework,Version=v4.6": [
+      "MySql.Data >= 8.0.15",
+      "SmartDb.NetCore >= 2.42.0"
+    ],
+    ".NETFramework,Version=v4.6.1": [
+      "MySql.Data >= 8.0.15",
+      "SmartDb.NetCore >= 2.42.0"
+    ],
     ".NETStandard,Version=v2.0": [
       "MySql.Data >= 8.0.15",
       "NETStandard.Library >= 2.0.3",
-      "SmartDb.NetCore >= 2.30.3"
+      "SmartDb.NetCore >= 2.42.0"
     ]
   },
   "packageFolders": {
@@ -1230,17 +1467,18 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.30.3",
+    "version": "2.42.0",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.MySql.NetCore\\SmartDb.MySql.NetCore.csproj",
+      "projectUniqueName": "F:\\work\\dotnetcore-work\\SmartDb-work\\SmartDb.NetCore\\SmartDb.MySql.NetCore\\SmartDb.MySql.NetCore.csproj",
       "projectName": "SmartDb.MySql.NetCore",
-      "projectPath": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.MySql.NetCore\\SmartDb.MySql.NetCore.csproj",
+      "projectPath": "F:\\work\\dotnetcore-work\\SmartDb-work\\SmartDb.NetCore\\SmartDb.MySql.NetCore\\SmartDb.MySql.NetCore.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\work\\dotnet-work\\SmartDb\\netcore\\src\\SmartDbNetCore\\SmartDb.MySql.NetCore\\obj\\",
+      "outputPath": "F:\\work\\dotnetcore-work\\SmartDb-work\\SmartDb.NetCore\\SmartDb.MySql.NetCore\\obj\\",
       "projectStyle": "PackageReference",
+      "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1251,6 +1489,9 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
+        "net4.5.2",
+        "net4.6.1",
+        "net46",
         "netstandard2.0"
       ],
       "sources": {
@@ -1258,6 +1499,15 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
+        "net452": {
+          "projectReferences": {}
+        },
+        "net46": {
+          "projectReferences": {}
+        },
+        "net461": {
+          "projectReferences": {}
+        },
         "netstandard2.0": {
           "projectReferences": {}
         }
@@ -1269,6 +1519,42 @@
       }
     },
     "frameworks": {
+      "net452": {
+        "dependencies": {
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.15, )"
+          },
+          "SmartDb.NetCore": {
+            "target": "Package",
+            "version": "[2.42.0, )"
+          }
+        }
+      },
+      "net46": {
+        "dependencies": {
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.15, )"
+          },
+          "SmartDb.NetCore": {
+            "target": "Package",
+            "version": "[2.42.0, )"
+          }
+        }
+      },
+      "net461": {
+        "dependencies": {
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.15, )"
+          },
+          "SmartDb.NetCore": {
+            "target": "Package",
+            "version": "[2.42.0, )"
+          }
+        }
+      },
       "netstandard2.0": {
         "dependencies": {
           "MySql.Data": {
@@ -1283,7 +1569,7 @@
           },
           "SmartDb.NetCore": {
             "target": "Package",
-            "version": "[2.30.3, )"
+            "version": "[2.42.0, )"
           }
         },
         "imports": [
