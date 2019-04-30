@@ -12,19 +12,19 @@
     <dependencies>
       <group targetFramework=".NETFramework4.5.2">
         <dependency id="MySql.Data" version="8.0.15" exclude="Build,Analyzers" />
-        <dependency id="SmartDb.NetCore" version="2.42.0" exclude="Build,Analyzers" />
+        <dependency id="SmartDb.NetCore" version="2.46.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework=".NETFramework4.6">
         <dependency id="MySql.Data" version="8.0.15" exclude="Build,Analyzers" />
-        <dependency id="SmartDb.NetCore" version="2.42.0" exclude="Build,Analyzers" />
+        <dependency id="SmartDb.NetCore" version="2.46.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework=".NETFramework4.6.1">
         <dependency id="MySql.Data" version="8.0.15" exclude="Build,Analyzers" />
-        <dependency id="SmartDb.NetCore" version="2.42.0" exclude="Build,Analyzers" />
+        <dependency id="SmartDb.NetCore" version="2.46.0" exclude="Build,Analyzers" />
       </group>
       <group targetFramework=".NETStandard2.0">
         <dependency id="MySql.Data" version="8.0.15" exclude="Build,Analyzers" />
-        <dependency id="SmartDb.NetCore" version="2.42.0" exclude="Build,Analyzers" />
+        <dependency id="SmartDb.NetCore" version="2.46.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>

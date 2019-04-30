@@ -303,8 +303,10 @@ namespace SmartDb.NetCore
             {
                 return result;
             }
-            var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams);
-            result = DataReaderToEntity<T>(reader);
+            using (var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams))
+            {
+                result = DataReaderToEntity<T>(reader);
+            }
             return result;
         }
 
@@ -324,8 +326,10 @@ namespace SmartDb.NetCore
             {
                 return result;
             }
-            var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams);
-            result = DataReaderToEntityList<T>(reader);
+            using (var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams))
+            {
+                result = DataReaderToEntityList<T>(reader);
+            }
             return result;
         }
 
@@ -344,8 +348,10 @@ namespace SmartDb.NetCore
             {
                 return result;
             }
-            var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams);
-            result = DataReaderToEntityList<T>(reader);
+            using (var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams))
+            {
+                result = DataReaderToEntityList<T>(reader);
+            }
             return result;
         }
 
@@ -385,10 +391,12 @@ namespace SmartDb.NetCore
             {
                 return pageResult;
             }
-            var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams);
-            var listData = DataReaderToEntityList<T>(reader);
-            pageResult.Data = listData;
-            pageResult = SetPageListResult<T>(pageResult);
+            using (var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams))
+            {
+                var listData = DataReaderToEntityList<T>(reader);
+                pageResult.Data = listData;
+                pageResult = SetPageListResult<T>(pageResult);
+            }
             return pageResult;
         }
 

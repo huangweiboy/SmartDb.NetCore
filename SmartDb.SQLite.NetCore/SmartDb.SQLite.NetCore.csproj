@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.0;net45;net4.5.1;net4.5.2;net46;net4.6.1</TargetFrameworks>
     <Description>SmartDb.SQLite.NetCore是一套基于DoNet和DoNetCore对SQLite数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架.</Description>
     <PackageReleaseNotes>SmartDb.SQLite.NetCore是一套基于DoNet和DoNetCore对SQLite数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架.</PackageReleaseNotes>
-    <Version>2.43.0</Version>
+    <Version>2.46.0</Version>
     <PackageLicenseUrl></PackageLicenseUrl>
     <Authors>Bruce</Authors>
     <Company>Bruce</Company>
@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SmartDb.NetCore" Version="2.42.0" />
+    <PackageReference Include="SmartDb.NetCore" Version="2.46.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.110" />
   </ItemGroup>
 

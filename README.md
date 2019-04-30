@@ -1,4 +1,4 @@
-#### SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、Oracle数据库支持的快速开发和轻量级ORM框架.
+#### SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、SQLite、Oracle数据库支持的快速开发和轻量级ORM框架.
 
 SmartDb.NetCore框架特点如下：
    * 支持.NF和DoNetCore框架。
@@ -6,10 +6,11 @@ SmartDb.NetCore框架特点如下：
    * 提供基于Emit将IDataReader、DataTable转化为实体对象。
    * 支持非参数化SQL语句、原生参数化SQL语句及类似Dapper参数化功能，提供原生ADO.Net对CRUD操作功能。
 
-本源码提供SmartDb.NetCore对MSSql、MySql调用一些测试代码，大家根据测试项目配置自己创建测试数据库和测试数据表。
+本源码提供SmartDb.NetCore对MSSql、MySql、SQLite调用一些测试代码，大家根据测试项目配置自己创建测试数据库和测试数据表。
 
 SmartDb.MySql.NetCore是SmartDb.NetCore对MySql支持的驱动包，Nuget包地址如下：[SmartDb.MySql.NetCore](https://www.nuget.org/packages/SmartDb.MySql.NetCore/)<br>
 SmartDb.SqlServer.NetCore是SmartDb.NetCore对SqlServer支持的驱动包，Nuget包地址如下：[SmartDb.SqlServer.NetCore](https://www.nuget.org/packages/SmartDb.SqlServer.NetCore/)
+SmartDb.SQLite.NetCore是SmartDb.NetCore对SQLite支持的驱动包，Nuget包地址如下：[SmartDb.SQLite.NetCore](https://www.nuget.org/packages/SmartDb.SQLite.NetCore/)
 
 实体类：
 ``` 
