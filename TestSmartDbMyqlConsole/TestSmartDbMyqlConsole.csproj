@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SmartDb.MySql.NetCore" Version="2.42.0" />
+    <PackageReference Include="SmartDb.MySql.NetCore" Version="2.50.0" />
+    <PackageReference Include="SmartDb.SQLite.NetCore" Version="2.50.0" />
+    <PackageReference Include="SmartDb.SqlServer.NetCore" Version="2.50.0" />
   </ItemGroup>
 
 </Project>

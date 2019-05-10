@@ -695,6 +695,7 @@
       "type": "package",
       "path": "smartdb.netcore/2.46.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/SmartDb.NetCore.dll",
         "lib/net451/SmartDb.NetCore.dll",
@@ -1467,7 +1468,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.46.0",
+    "version": "2.50.0",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },

@@ -904,7 +904,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.34.0",
+    "version": "2.50.0",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },

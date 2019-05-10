@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SmartDb.Mapper.NetCore</id>
+    <version>2.50.0</version>
+    <authors>Bruce</authors>
+    <owners>Bruce</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/joyet/SmartDb.NetCore</projectUrl>
+    <description>SmartDb.Mapper.NetCore是个基于Emit对象映射框架，能够将基于IDataReader和DataTable转化为实体对象。
+框架开源地址：https://github.com/joyet/SmartDb.NetCore</description>
+    <releaseNotes>SmartDb.Mapper.NetCore是个基于Emit对象映射框架，能够将基于IDataReader和DataTable转化为实体对象.</releaseNotes>
+    <tags>SmartDb.Mapper.NetCore SmartDb NetCore DotNet Emit</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Reflection.Emit.Lightweight" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\bin\Release\net4.5.1\SmartDb.Mapper.NetCore.dll" target="lib\net451\SmartDb.Mapper.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\bin\Release\net4.5.2\SmartDb.Mapper.NetCore.dll" target="lib\net452\SmartDb.Mapper.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\bin\Release\net4.6.1\SmartDb.Mapper.NetCore.dll" target="lib\net461\SmartDb.Mapper.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\bin\Release\net45\SmartDb.Mapper.NetCore.dll" target="lib\net45\SmartDb.Mapper.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\bin\Release\net46\SmartDb.Mapper.NetCore.dll" target="lib\net46\SmartDb.Mapper.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.Mapper.NetCore\bin\Release\netstandard2.0\SmartDb.Mapper.NetCore.dll" target="lib\netstandard2.0\SmartDb.Mapper.NetCore.dll" />
+  </files>
+</package>

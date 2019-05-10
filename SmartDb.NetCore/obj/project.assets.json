@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.5": {
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -25,7 +25,7 @@
       }
     },
     ".NETFramework,Version=v4.5.1": {
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -48,7 +48,7 @@
       }
     },
     ".NETFramework,Version=v4.5.2": {
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -71,7 +71,7 @@
       }
     },
     ".NETFramework,Version=v4.6": {
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -94,7 +94,7 @@
       }
     },
     ".NETFramework,Version=v4.6.1": {
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -150,7 +150,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -419,12 +419,11 @@
         "netstandard.library.nuspec"
       ]
     },
-    "SmartDb.Mapper.NetCore/2.34.0": {
-      "sha512": "OnH8SlgeblOz4mLz/E8r8MetJpicB50Jt8LBdyWn1c8CdP3le/E2sg2cRFqFP8GXMkWvQCGA5kQtBDGRUyC+mA==",
+    "SmartDb.Mapper.NetCore/2.50.0": {
+      "sha512": "4//B/f6j/t6767ciq3L8s0qXBlDg6SMHF+sB1hz0fBodqViLlroN8P64AhS1hDeiuN4p+8QNvczQDAf7IVQRMQ==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/2.34.0",
+      "path": "smartdb.mapper.netcore/2.50.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/SmartDb.Mapper.NetCore.dll",
         "lib/net451/SmartDb.Mapper.NetCore.dll",
@@ -432,7 +431,7 @@
         "lib/net46/SmartDb.Mapper.NetCore.dll",
         "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.2.34.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.50.0.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
@@ -968,23 +967,23 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.5": [
-      "SmartDb.Mapper.NetCore >= 2.34.0"
+      "SmartDb.Mapper.NetCore >= 2.50.0"
     ],
     ".NETFramework,Version=v4.5.1": [
-      "SmartDb.Mapper.NetCore >= 2.34.0"
+      "SmartDb.Mapper.NetCore >= 2.50.0"
     ],
     ".NETFramework,Version=v4.5.2": [
-      "SmartDb.Mapper.NetCore >= 2.34.0"
+      "SmartDb.Mapper.NetCore >= 2.50.0"
     ],
     ".NETFramework,Version=v4.6": [
-      "SmartDb.Mapper.NetCore >= 2.34.0"
+      "SmartDb.Mapper.NetCore >= 2.50.0"
     ],
     ".NETFramework,Version=v4.6.1": [
-      "SmartDb.Mapper.NetCore >= 2.34.0"
+      "SmartDb.Mapper.NetCore >= 2.50.0"
     ],
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
-      "SmartDb.Mapper.NetCore >= 2.34.0"
+      "SmartDb.Mapper.NetCore >= 2.50.0"
     ]
   },
   "packageFolders": {
@@ -993,7 +992,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.46.0",
+    "version": "2.50.0",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },
@@ -1057,7 +1056,7 @@
         "dependencies": {
           "SmartDb.Mapper.NetCore": {
             "target": "Package",
-            "version": "[2.34.0, )"
+            "version": "[2.50.0, )"
           }
         }
       },
@@ -1065,7 +1064,7 @@
         "dependencies": {
           "SmartDb.Mapper.NetCore": {
             "target": "Package",
-            "version": "[2.34.0, )"
+            "version": "[2.50.0, )"
           }
         }
       },
@@ -1073,7 +1072,7 @@
         "dependencies": {
           "SmartDb.Mapper.NetCore": {
             "target": "Package",
-            "version": "[2.34.0, )"
+            "version": "[2.50.0, )"
           }
         }
       },
@@ -1081,7 +1080,7 @@
         "dependencies": {
           "SmartDb.Mapper.NetCore": {
             "target": "Package",
-            "version": "[2.34.0, )"
+            "version": "[2.50.0, )"
           }
         }
       },
@@ -1089,7 +1088,7 @@
         "dependencies": {
           "SmartDb.Mapper.NetCore": {
             "target": "Package",
-            "version": "[2.34.0, )"
+            "version": "[2.50.0, )"
           }
         }
       },
@@ -1103,7 +1102,7 @@
           },
           "SmartDb.Mapper.NetCore": {
             "target": "Package",
-            "version": "[2.34.0, )"
+            "version": "[2.50.0, )"
           }
         },
         "imports": [
