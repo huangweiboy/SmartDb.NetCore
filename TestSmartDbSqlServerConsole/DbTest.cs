@@ -95,20 +95,20 @@ namespace TestSmartDbSqlServerConsole
             var dbFactory = db.DbBuilder.DbFactory;
             var dbOperator = dbFactory.GetDbParamOperator();
 
-            //根据实体主键参数值查询数据
-            var data = db.QueryById<UserInfo>(5);
+            ////根据实体主键参数值查询数据
+            //var data = db.QueryById<UserInfo>(5);
 
-            //根据查询字段、过滤SQL、过滤参数查询数据列表
-            var dataList1 = db.Query<UserInfo>("UserId,UserName", "UserId=4", null);
-            var dataList2 = db.Query<UserInfo>("UserId,UserName", string.Format("UserId={0}UserId", dbOperator), new { UserId = 4 });
+            ////根据查询字段、过滤SQL、过滤参数查询数据列表
+            //var dataList1 = db.Query<UserInfo>("UserId,UserName", "UserId=4", null);
+            //var dataList2 = db.Query<UserInfo>("UserId,UserName", string.Format("UserId={0}UserId", dbOperator), new { UserId = 4 });
 
-            //根据查询参数化SQL、参数列表查询数据列表
-            var dataList3 = db.Query<UserInfo>("select * from UserInfo where UserId=4", null);
-            var dataList4 = db.Query<UserInfo>(string.Format("select * from UserInfo where UserId={0}UserId", dbOperator), new { UserId = 4 });
+            ////根据查询参数化SQL、参数列表查询数据列表
+            //var dataList3 = db.Query<UserInfo>("select * from UserInfo where UserId=4", null);
+            //var dataList4 = db.Query<UserInfo>(string.Format("select * from UserInfo where UserId={0}UserId", dbOperator), new { UserId = 4 });
 
             //分页查询列表
-            var pageDataList1 = db.QueryPageList<UserInfo>(10, 1, "*", "UserId>2", "UserId asc", null);
-            var pageDataList2 = db.QueryPageList<UserInfo>(10, 1, "UserId,UserName", string.Format("UserId>{0}UserId", dbOperator), "UserId asc", new { UserId = 2 });
+            var pageDataList1 = db.QueryPageList<UserInfo>("*", "UserId>2", "UserId", "asc", 10, 2, null);
+            var pageDataList2 = db.QueryPageList<UserInfo>("UserId,UserName", string.Format("UserId>{0}UserId", dbOperator), "UserId", "asc", 10, 1, new { UserId = 2 });
         }
 
         /// <summary>

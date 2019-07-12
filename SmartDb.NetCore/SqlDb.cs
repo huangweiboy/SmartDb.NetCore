@@ -356,48 +356,60 @@ namespace SmartDb.NetCore
         }
 
         /// <summary>
-        /// 根据查询字段、where参数、排序条件、每页数量、总页数查询实体对应分页数据
+        /// 单表分页数据
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <param name="pageSize"></param>
-        /// <param name="pageIndex"></param>
-        /// <param name="queryColumns"></param>
-        /// <param name="whereSql"></param>
-        /// <param name="sortCriteria"></param>
-        /// <param name="whereObjParams"></param>
+        /// <param name="queryColumns">查询字段</param>
+        /// <param name="whereSql">过滤条件Sql</param>
+        /// <param name="sortColumn">排序字段</param>
+        /// <param name="sortType">排序类型</param>
+        /// <param name="pageSize">第几页</param>
+        /// <param name="pageIndex">每页显示数量</param>
+        /// <param name="whereParam">过滤条件参数</param>
         /// <returns></returns>
-        public virtual PageResultEntity QueryPageList<T>(int pageSize, int pageIndex, string queryColumns, string whereSql,string sortCriteria,object whereObjParams)
+        public virtual PageResultEntity QueryPageList<T>(string queryColumns, string whereSql,string sortColumn,string sortType, long pageSize, long pageIndex, object whereObjParams)
         {
-            PageResultEntity pageResult = new PageResultEntity();
-            pageResult.PageSize = pageSize;
-            pageResult.CurrentPageIndex = pageIndex;
-            var totalPageDbEntity = DbBuilder.QueryTotalPageCount<T>(whereSql, whereObjParams);
-            if (totalPageDbEntity == null)
+            PageResultEntity result = new PageResultEntity();
+            if (pageSize <= 0|| pageIndex<=0)
             {
-                return pageResult;
+                return result;
             }
-            var objTotalCount = DbHelper.ExecuteScalar(totalPageDbEntity.CommandText, totalPageDbEntity.DbParams);
-            if (objTotalCount == null)
+            result.PageSize = pageSize;
+            result.CurrentPageIndex = pageIndex;
+
+            #region 为了分页查询效率，查询第一页时才会查询所有条数
+            if (result.CurrentPageIndex==1)
             {
-                return pageResult;
+                var totalPageDbEntity = DbBuilder.QueryTotalPageCount<T>(whereSql, whereObjParams);
+                if (totalPageDbEntity == null)
+                {
+                    return result;
+                }
+                var objTotalCount = DbHelper.ExecuteScalar(totalPageDbEntity.CommandText, totalPageDbEntity.DbParams);
+                if (objTotalCount == null)
+                {
+                    return result;
+                }
+                result.TotalCount = Convert.ToInt64(objTotalCount);
+                if (result.TotalCount <= 0)
+                {
+                    return result;
+                }
             }
-            pageResult.TotalCount = Convert.ToInt32(objTotalCount);
-            if (pageResult.TotalCount <= 0)
-            {
-                return pageResult;
-            }
-            var dbEntity = DbBuilder.QueryPageList<T>(queryColumns, whereSql, whereObjParams, sortCriteria, pageSize, pageIndex);
+            #endregion
+
+            var dbEntity = DbBuilder.QueryPageList<T>(queryColumns, whereSql,sortColumn,sortType,pageSize,pageIndex,whereObjParams);
             if (dbEntity == null)
             {
-                return pageResult;
+                return result;
             }
             using (var reader = DbHelper.ExecuteReader(dbEntity.CommandText, dbEntity.DbParams))
             {
-                var listData = DataReaderToEntityList<T>(reader);
-                pageResult.Data = listData;
-                pageResult = SetPageListResult<T>(pageResult);
+                var datas = DataReaderToEntityList<T>(reader);
+                result.Data = datas;
+                result = SetPageListResult<T>(result);
             }
-            return pageResult;
+            return result;
         }
 
         /// <summary>
@@ -529,28 +541,27 @@ namespace SmartDb.NetCore
                 return pageResult;
             }
             var dataList = pageResult.Data as List<T>;
-            int totalPageIndex = 0;
-            if (dataList.Count == 0)
+            if (dataList.Count<= 0)
             {
-                totalPageIndex = 0;
+                pageResult.TotalPageIndex = 0;
                 return pageResult;
             }
-            else if (pageResult.TotalCount <= pageResult.PageSize)
+            else if (pageResult.TotalCount>0&&pageResult.TotalCount <= pageResult.PageSize)
             {
-                totalPageIndex = 1;
+                pageResult.TotalPageIndex = 1;
+                return pageResult;
             }
             else
             {
                 if (pageResult.TotalCount % pageResult.PageSize == 0)
                 {
-                    totalPageIndex = pageResult.TotalCount / pageResult.PageSize;
+                    pageResult.TotalPageIndex = pageResult.TotalCount / pageResult.PageSize;
                 }
                 else
                 {
-                    totalPageIndex = pageResult.TotalCount / pageResult.PageSize + 1;
+                    pageResult.TotalPageIndex = pageResult.TotalCount / pageResult.PageSize + 1;
                 }
             }
-            pageResult.TotalPageIndex = totalPageIndex;
             return pageResult;
         }
 

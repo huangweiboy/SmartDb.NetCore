@@ -37,7 +37,7 @@
           "lib/net452/MySql.Data.dll": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -49,10 +49,10 @@
           "lib/net452/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.46.0": {
+      "SmartDb.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.34.0"
+          "SmartDb.Mapper.NetCore": "2.50.0"
         },
         "compile": {
           "lib/net452/SmartDb.NetCore.dll": {}
@@ -107,7 +107,7 @@
           "lib/net452/MySql.Data.dll": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -119,10 +119,10 @@
           "lib/net46/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.46.0": {
+      "SmartDb.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.34.0"
+          "SmartDb.Mapper.NetCore": "2.50.0"
         },
         "compile": {
           "lib/net46/SmartDb.NetCore.dll": {}
@@ -177,7 +177,7 @@
           "lib/net452/MySql.Data.dll": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -189,10 +189,10 @@
           "lib/net461/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.46.0": {
+      "SmartDb.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.34.0"
+          "SmartDb.Mapper.NetCore": "2.50.0"
         },
         "compile": {
           "lib/net461/SmartDb.NetCore.dll": {}
@@ -272,7 +272,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -284,10 +284,10 @@
           "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.46.0": {
+      "SmartDb.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.34.0"
+          "SmartDb.Mapper.NetCore": "2.50.0"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
@@ -673,10 +673,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "SmartDb.Mapper.NetCore/2.34.0": {
-      "sha512": "OnH8SlgeblOz4mLz/E8r8MetJpicB50Jt8LBdyWn1c8CdP3le/E2sg2cRFqFP8GXMkWvQCGA5kQtBDGRUyC+mA==",
+    "SmartDb.Mapper.NetCore/2.50.0": {
+      "sha512": "4//B/f6j/t6767ciq3L8s0qXBlDg6SMHF+sB1hz0fBodqViLlroN8P64AhS1hDeiuN4p+8QNvczQDAf7IVQRMQ==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/2.34.0",
+      "path": "smartdb.mapper.netcore/2.50.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -686,16 +686,15 @@
         "lib/net46/SmartDb.Mapper.NetCore.dll",
         "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.2.34.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.50.0.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
-    "SmartDb.NetCore/2.46.0": {
-      "sha512": "lEJRs8b/bXHtYn2XzkDfHg4+7QF9Pnhf0zZvCV6upJ7sFXNoH+z7rATjO9ylVF7IZ0xKY53HGpGvpcIvhfMf9Q==",
+    "SmartDb.NetCore/2.60.0": {
+      "sha512": "WUGIDjRwyHtRBzRLrJFW6NtT3xNmcBJORBpZ0xBALwxpJf5TvwzgbWvA3i5JW4G7vpbeHTT0h39FpjaXSPrIZA==",
       "type": "package",
-      "path": "smartdb.netcore/2.46.0",
+      "path": "smartdb.netcore/2.60.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/SmartDb.NetCore.dll",
         "lib/net451/SmartDb.NetCore.dll",
@@ -703,7 +702,7 @@
         "lib/net46/SmartDb.NetCore.dll",
         "lib/net461/SmartDb.NetCore.dll",
         "lib/netstandard2.0/SmartDb.NetCore.dll",
-        "smartdb.netcore.2.46.0.nupkg.sha512",
+        "smartdb.netcore.2.60.0.nupkg.sha512",
         "smartdb.netcore.nuspec"
       ]
     },
@@ -1446,20 +1445,20 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.5.2": [
       "MySql.Data >= 8.0.15",
-      "SmartDb.NetCore >= 2.46.0"
+      "SmartDb.NetCore >= 2.60.0"
     ],
     ".NETFramework,Version=v4.6": [
       "MySql.Data >= 8.0.15",
-      "SmartDb.NetCore >= 2.46.0"
+      "SmartDb.NetCore >= 2.60.0"
     ],
     ".NETFramework,Version=v4.6.1": [
       "MySql.Data >= 8.0.15",
-      "SmartDb.NetCore >= 2.46.0"
+      "SmartDb.NetCore >= 2.60.0"
     ],
     ".NETStandard,Version=v2.0": [
       "MySql.Data >= 8.0.15",
       "NETStandard.Library >= 2.0.3",
-      "SmartDb.NetCore >= 2.46.0"
+      "SmartDb.NetCore >= 2.60.0"
     ]
   },
   "packageFolders": {
@@ -1468,7 +1467,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "2.50.0",
+    "version": "2.60.0",
     "restoreSettings": {
       "hideWarningsAndErrors": true
     },
@@ -1528,7 +1527,7 @@
           },
           "SmartDb.NetCore": {
             "target": "Package",
-            "version": "[2.46.0, )"
+            "version": "[2.60.0, )"
           }
         }
       },
@@ -1540,7 +1539,7 @@
           },
           "SmartDb.NetCore": {
             "target": "Package",
-            "version": "[2.46.0, )"
+            "version": "[2.60.0, )"
           }
         }
       },
@@ -1552,7 +1551,7 @@
           },
           "SmartDb.NetCore": {
             "target": "Package",
-            "version": "[2.46.0, )"
+            "version": "[2.60.0, )"
           }
         }
       },
@@ -1570,7 +1569,7 @@
           },
           "SmartDb.NetCore": {
             "target": "Package",
-            "version": "[2.46.0, )"
+            "version": "[2.60.0, )"
           }
         },
         "imports": [

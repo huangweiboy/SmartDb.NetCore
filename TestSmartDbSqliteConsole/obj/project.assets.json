@@ -208,7 +208,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -220,10 +220,10 @@
           "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.42.0": {
+      "SmartDb.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.34.0"
+          "SmartDb.Mapper.NetCore": "2.50.0"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
@@ -232,10 +232,10 @@
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
         }
       },
-      "SmartDb.SQLite.NetCore/2.43.0": {
+      "SmartDb.SQLite.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.NetCore": "2.42.0",
+          "SmartDb.NetCore": "2.60.0",
           "System.Data.SQLite": "1.0.110"
         },
         "compile": {
@@ -847,10 +847,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "SmartDb.Mapper.NetCore/2.34.0": {
-      "sha512": "OnH8SlgeblOz4mLz/E8r8MetJpicB50Jt8LBdyWn1c8CdP3le/E2sg2cRFqFP8GXMkWvQCGA5kQtBDGRUyC+mA==",
+    "SmartDb.Mapper.NetCore/2.50.0": {
+      "sha512": "4//B/f6j/t6767ciq3L8s0qXBlDg6SMHF+sB1hz0fBodqViLlroN8P64AhS1hDeiuN4p+8QNvczQDAf7IVQRMQ==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/2.34.0",
+      "path": "smartdb.mapper.netcore/2.50.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -860,14 +860,14 @@
         "lib/net46/SmartDb.Mapper.NetCore.dll",
         "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.2.34.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.50.0.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
-    "SmartDb.NetCore/2.42.0": {
-      "sha512": "Vt5++OGMJoOuf7H1JFpzNU+pgEnvfiQfubbJzNW8LNm+ZoSQEIiVPu8lzyMxWAJipnyt++uaqrSPQHIXu61Xmw==",
+    "SmartDb.NetCore/2.60.0": {
+      "sha512": "WUGIDjRwyHtRBzRLrJFW6NtT3xNmcBJORBpZ0xBALwxpJf5TvwzgbWvA3i5JW4G7vpbeHTT0h39FpjaXSPrIZA==",
       "type": "package",
-      "path": "smartdb.netcore/2.42.0",
+      "path": "smartdb.netcore/2.60.0",
       "files": [
         ".signature.p7s",
         "lib/net45/SmartDb.NetCore.dll",
@@ -876,14 +876,14 @@
         "lib/net46/SmartDb.NetCore.dll",
         "lib/net461/SmartDb.NetCore.dll",
         "lib/netstandard2.0/SmartDb.NetCore.dll",
-        "smartdb.netcore.2.42.0.nupkg.sha512",
+        "smartdb.netcore.2.60.0.nupkg.sha512",
         "smartdb.netcore.nuspec"
       ]
     },
-    "SmartDb.SQLite.NetCore/2.43.0": {
-      "sha512": "h5CLTRLSCZO0faxyIttDhfsvgZYaWDRrDI5mq8/jblCfPedfyzKAiVx2Us2w6LZKugSBlgAxHGIj8+PYVFSIGQ==",
+    "SmartDb.SQLite.NetCore/2.60.0": {
+      "sha512": "ArA5zDwnKqDpL+GiwuLurqTMhGc4XNEn6tg6iU8GMEyfCNhCxMbAHNcwXWoCLNVYioeRIe+nMi1WYyvHtyYTjA==",
       "type": "package",
-      "path": "smartdb.sqlite.netcore/2.43.0",
+      "path": "smartdb.sqlite.netcore/2.60.0",
       "files": [
         ".signature.p7s",
         "lib/net45/SmartDb.SQLite.NetCore.dll",
@@ -892,7 +892,7 @@
         "lib/net46/SmartDb.SQLite.NetCore.dll",
         "lib/net461/SmartDb.SQLite.NetCore.dll",
         "lib/netstandard2.0/SmartDb.SQLite.NetCore.dll",
-        "smartdb.sqlite.netcore.2.43.0.nupkg.sha512",
+        "smartdb.sqlite.netcore.2.60.0.nupkg.sha512",
         "smartdb.sqlite.netcore.nuspec"
       ]
     },
@@ -1488,7 +1488,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "SmartDb.SQLite.NetCore >= 2.43.0"
+      "SmartDb.SQLite.NetCore >= 2.60.0"
     ]
   },
   "packageFolders": {
@@ -1546,7 +1546,7 @@
           },
           "SmartDb.SQLite.NetCore": {
             "target": "Package",
-            "version": "[2.43.0, )"
+            "version": "[2.60.0, )"
           }
         },
         "imports": [

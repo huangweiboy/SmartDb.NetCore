@@ -17,11 +17,11 @@ namespace TestSmartDbMyqlConsole
         public static void Test()
         {
             var dbTest = new DbTest(connectString, isShowSqlToConsole);
-            dbTest.CreateTable(dbName);
-            dbTest.DeleteAll();
-            dbTest.Insert();
-            dbTest.Delete();
-            dbTest.Update();
+            //dbTest.CreateTable(dbName);
+            //dbTest.DeleteAll();
+            //dbTest.Insert();
+            //dbTest.Delete();
+            //dbTest.Update();
             dbTest.Query();
             dbTest.OrtherQuery();
             dbTest.OrtherNoneQuery();

@@ -266,7 +266,7 @@
           }
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -278,10 +278,10 @@
           "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.42.0": {
+      "SmartDb.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.34.0"
+          "SmartDb.Mapper.NetCore": "2.50.0"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
@@ -290,10 +290,10 @@
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
         }
       },
-      "SmartDb.SqlServer.NetCore/2.42.0": {
+      "SmartDb.SqlServer.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.NetCore": "2.42.0",
+          "SmartDb.NetCore": "2.60.0",
           "System.Data.SqlClient": "4.6.0"
         },
         "compile": {
@@ -843,6 +843,7 @@
       "type": "package",
       "path": "microsoft.win32.registry/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1025,6 +1026,7 @@
       "type": "package",
       "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -1040,6 +1042,7 @@
       "type": "package",
       "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -1055,6 +1058,7 @@
       "type": "package",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -1065,10 +1069,10 @@
         "version.txt"
       ]
     },
-    "SmartDb.Mapper.NetCore/2.34.0": {
-      "sha512": "OnH8SlgeblOz4mLz/E8r8MetJpicB50Jt8LBdyWn1c8CdP3le/E2sg2cRFqFP8GXMkWvQCGA5kQtBDGRUyC+mA==",
+    "SmartDb.Mapper.NetCore/2.50.0": {
+      "sha512": "4//B/f6j/t6767ciq3L8s0qXBlDg6SMHF+sB1hz0fBodqViLlroN8P64AhS1hDeiuN4p+8QNvczQDAf7IVQRMQ==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/2.34.0",
+      "path": "smartdb.mapper.netcore/2.50.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1078,14 +1082,14 @@
         "lib/net46/SmartDb.Mapper.NetCore.dll",
         "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.2.34.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.50.0.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
-    "SmartDb.NetCore/2.42.0": {
-      "sha512": "Vt5++OGMJoOuf7H1JFpzNU+pgEnvfiQfubbJzNW8LNm+ZoSQEIiVPu8lzyMxWAJipnyt++uaqrSPQHIXu61Xmw==",
+    "SmartDb.NetCore/2.60.0": {
+      "sha512": "WUGIDjRwyHtRBzRLrJFW6NtT3xNmcBJORBpZ0xBALwxpJf5TvwzgbWvA3i5JW4G7vpbeHTT0h39FpjaXSPrIZA==",
       "type": "package",
-      "path": "smartdb.netcore/2.42.0",
+      "path": "smartdb.netcore/2.60.0",
       "files": [
         ".signature.p7s",
         "lib/net45/SmartDb.NetCore.dll",
@@ -1094,14 +1098,14 @@
         "lib/net46/SmartDb.NetCore.dll",
         "lib/net461/SmartDb.NetCore.dll",
         "lib/netstandard2.0/SmartDb.NetCore.dll",
-        "smartdb.netcore.2.42.0.nupkg.sha512",
+        "smartdb.netcore.2.60.0.nupkg.sha512",
         "smartdb.netcore.nuspec"
       ]
     },
-    "SmartDb.SqlServer.NetCore/2.42.0": {
-      "sha512": "50ixCn1ClUqW6VtBkh1piRRfMZHKsHYng4VwypXrE01ZMVmUSzpjRJC8WOq1o7K931hXutDtu8ZkBSmLYzVAjw==",
+    "SmartDb.SqlServer.NetCore/2.60.0": {
+      "sha512": "kDnGWeuCkiM8tbBKhNyAlSi0mqUyTO8yQA/sLrgjeF4azvrXPy76/DJQgL5V7ZM0jcvwAmyJr6Q0Z6OYJSMoyw==",
       "type": "package",
-      "path": "smartdb.sqlserver.netcore/2.42.0",
+      "path": "smartdb.sqlserver.netcore/2.60.0",
       "files": [
         ".signature.p7s",
         "lib/net451/SmartDb.SqlServer.NetCore.dll",
@@ -1109,7 +1113,7 @@
         "lib/net46/SmartDb.SqlServer.NetCore.dll",
         "lib/net461/SmartDb.SqlServer.NetCore.dll",
         "lib/netstandard2.0/SmartDb.SqlServer.NetCore.dll",
-        "smartdb.sqlserver.netcore.2.42.0.nupkg.sha512",
+        "smartdb.sqlserver.netcore.2.60.0.nupkg.sha512",
         "smartdb.sqlserver.netcore.nuspec"
       ]
     },
@@ -1614,6 +1618,7 @@
       "type": "package",
       "path": "system.security.accesscontrol/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1765,6 +1770,7 @@
       "type": "package",
       "path": "system.text.encoding.codepages/4.5.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -1878,7 +1884,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "SmartDb.SqlServer.NetCore >= 2.42.0"
+      "SmartDb.SqlServer.NetCore >= 2.60.0"
     ]
   },
   "packageFolders": {
@@ -1936,7 +1942,7 @@
           },
           "SmartDb.SqlServer.NetCore": {
             "target": "Package",
-            "version": "[2.42.0, )"
+            "version": "[2.60.0, )"
           }
         },
         "imports": [

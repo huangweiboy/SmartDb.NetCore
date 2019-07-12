@@ -12,20 +12,24 @@ namespace SmartDb.SqlServer.NetCore
    public class SqlServerBuilder:SqlBuilder
     {
         /// <summary>
-        /// 根据查询字段、where参数、排序条件、每页数量、总页数查询实体对应分页数据
+        /// 单实体分页数据
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="queryColumns"></param>
         /// <param name="whereSql"></param>
-        /// <param name="whereParam"></param>
         /// <param name="sortCriteria"></param>
         /// <param name="pageSize"></param>
         /// <param name="pageIndex"></param>
+        /// <param name="whereObjParams"></param>
         /// <returns></returns>
-        public override DbEntity QueryPageList<T>(string queryColumns,string whereSql, object whereParam, string sortCriteria, int pageSize, int pageIndex)
+        public override DbEntity QueryPageList<T>(string queryColumns, string whereSql, string sortColumn, string sortType, long pageSize, long pageIndex, object whereObjParams)
         {
             DbEntity dbEntity = null;
-            if (string.IsNullOrEmpty(queryColumns))
+            if (string.IsNullOrEmpty(sortColumn) || string.IsNullOrEmpty(sortType))
+            {
+                return dbEntity;
+            }
+            if (pageSize <= 0 || pageIndex <= 0)
             {
                 return dbEntity;
             }
@@ -36,47 +40,30 @@ namespace SmartDb.SqlServer.NetCore
             {
                 TableEntity = tableEntity
             };
-            int startNum = pageSize * (pageIndex - 1) + 1;
-            int endNum = pageSize * pageIndex;
-            string dbOperator = DbFactory.GetDbParamOperator();
-            var pkColumn = attributeBuilder.GetPkColumnInfo(type);
-            if (pkColumn == null)
-            {
-                return dbEntity;
-            }
-            List<TableColumnAttribute> whereColumns = attributeBuilder.GetColumnInfos(whereParam);
+            var startNum = pageSize * (pageIndex - 1)+1;
+            var endNum = pageSize * pageIndex;
+            var dbOperator = DbFactory.GetDbParamOperator();
+            List<TableColumnAttribute> whereColumns = attributeBuilder.GetColumnInfos(whereObjParams);
             var dbParams = new List<IDbDataParameter>();
 
             //分页查询模板
-            StringBuilder sqlBuild = new StringBuilder("select {queryColumns} from {tableName} a,");
-            sqlBuild.Append("(");
-            sqlBuild.Append("select {pkColumn},row_number() over(order by {sortCriteria}) num from {tableName} {whereCriteria}");
-            sqlBuild.Append(")");
-            sqlBuild.Append(" b where a.{pkColumn}=b.{pkColumn} and b.num between {startNum} and {endNum} ");
-            sqlBuild.Append("order by a.{sortCriteria};");
-
+            var queryTemplate = @"select  {queryColumns} from 
+(
+    select {sortColumn},ROW_NUMBER() over(order by {sortColumn} {sortType}) num from {tableName} {whereCriteria} order by {sortColumn} {sortType}
+) 
+a inner join {tableName} b on a.{sortColumn}=b.{sortColumn} and a.num between {startNum} and {endNum} order by b.{sortColumn} {sortType};";
+            StringBuilder sqlBuild = new StringBuilder(queryTemplate);
+            sqlBuild.Replace("{sortColumn}", sortColumn);
             sqlBuild.Replace("{tableName}", tableEntity.TableName);
-            sqlBuild.Replace("{pkColumn}", pkColumn.ColumnName);
-            sqlBuild.Replace("{sortCriteria}", sortCriteria);
+            sqlBuild.Replace("{sortType}", sortType);
             sqlBuild.Replace("{startNum}", startNum.ToString());
             sqlBuild.Replace("{endNum}", endNum.ToString());
-            HandleQuerColumns(queryColumns,"a",ref sqlBuild,ref dbParams);
+            sqlBuild.Replace("{pageSize}", pageSize.ToString());
+            HandleQueryParam(queryColumns, "b", ref sqlBuild);
             HandleWhereParam(whereSql, whereColumns, ref sqlBuild, ref dbParams);
             dbEntity.CommandText = sqlBuild.ToString();
             dbEntity.DbParams = dbParams;
             return dbEntity;
-        }
-
-        /// <summary>
-        /// 根据查询Sql、where参数查询实体对应数据总数量
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="whereSql"></param>
-        /// <param name="whereObjParams"></param>
-        /// <returns></returns>
-        public sealed  override DbEntity QueryTotalPageCount<T>(string whereSql,object whereObjParams)
-        {
-           return base.QueryTotalPageCount<T>(whereSql, whereObjParams);
         }
     }
 }

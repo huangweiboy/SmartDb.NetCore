@@ -14,98 +14,9 @@ namespace SmartDb.NetCore
         /// </summary>
         public virtual SqlDbFactory DbFactory { get; set; }
 
-        /// <summary>
-        /// 是否启用缓存
-        /// </summary>
-        public virtual bool IsStartCache { get; set; }
 
         public SqlBuilder()
         {
-            IsStartCache = false;
-        }
-
-        /// <summary>
-        /// 获取表信息
-        /// </summary>
-        /// <param name="type"></param>
-        /// <returns></returns>
-        protected TableAttribute GetTableInfo(Type type)
-        {
-            TableAttribute tableEntity = null;
-            var attributeBuilder = new AttributeBuilder();
-            tableEntity = attributeBuilder.GetTableInfo(type);
-            return tableEntity;
-        }
-
-        /// <summary>
-        /// 获取表主键字段信息
-        /// </summary>
-        /// <param name="type"></param>
-        /// <returns></returns>
-        protected TableColumnAttribute GetPkColumnInfo(Type type)
-        {
-            TableColumnAttribute pkColumn = null;
-            var attributeBuilder = new AttributeBuilder();
-            pkColumn = attributeBuilder.GetPkColumnInfo(type);
-            return pkColumn;
-        }
-
-        /// <summary>
-        /// 获取表缓存信息
-        /// </summary>
-        /// <param name="type"></param>
-        /// <returns></returns>
-        public virtual TableAttribute GetCacheTableInfo(Type type)
-        {
-            TableAttribute tableEntity = null;
-            if (!IsStartCache)
-            {
-                tableEntity = GetTableInfo(type);
-                return tableEntity;
-            }
-            var cacheInstance = CacheFactroy.GetInstance();
-            var cacheKey = string.Format(SmartDbConstants.cacheTableKey, type.FullName.ToLower());
-            var cacheValue = cacheInstance.GetCache(cacheKey);
-            if (cacheValue == null)
-            {
-                tableEntity = GetTableInfo(type);
-                if (tableEntity != null)
-                {
-                    cacheInstance.SetCache(cacheKey, tableEntity);
-                }
-                return tableEntity;
-            }
-            tableEntity = cacheValue as TableAttribute;
-            return tableEntity;
-        }
-
-        /// <summary>
-        /// 获取表主键字段缓存信息
-        /// </summary>
-        /// <param name="type"></param>
-        /// <returns></returns>
-        public virtual TableColumnAttribute GetCachePkColumnInfo(Type type)
-        {
-            TableColumnAttribute pkColumn = null;
-            if (!IsStartCache)
-            {
-                pkColumn = GetPkColumnInfo(type);
-                return pkColumn;
-            }
-            var cacheInstance = CacheFactroy.GetInstance();
-            var cacheKey = string.Format(SmartDbConstants.cachePKCloumnKey, type.FullName.ToLower());
-            var cacheValue = cacheInstance.GetCache(cacheKey);
-            if (cacheValue == null)
-            {
-                pkColumn = GetPkColumnInfo(type);
-                if (pkColumn != null)
-                {
-                    cacheInstance.SetCache(cacheKey, pkColumn);
-                }
-                return pkColumn;
-            }
-            pkColumn = cacheValue as TableColumnAttribute;
-            return pkColumn;
         }
 
         /// <summary>
@@ -122,7 +33,7 @@ namespace SmartDb.NetCore
                 return dbEntity;
             }
             Type type = typeof(T);
-            TableAttribute tableEntity= GetCacheTableInfo(type);
+            TableAttribute tableEntity= GetTableInfo(type);
             if (tableEntity == null)
             {
                 return dbEntity;
@@ -142,7 +53,7 @@ namespace SmartDb.NetCore
             var dbOperatore = DbFactory.GetDbParamOperator();
             var dbParams = new List<IDbDataParameter>();
             var sqlBuild = new StringBuilder("insert into {tableName}({columnNames}) values({columnValues})");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
             var columnNameSql = new StringBuilder();
             var columnValueSql = new StringBuilder();
             int i = 0;
@@ -159,8 +70,8 @@ namespace SmartDb.NetCore
                 dbParams.Add(dbParam);
                 i++;
             }
-            sqlBuild.Replace(SmartDbConstants.template_columnNames, columnNameSql.ToString());
-            sqlBuild.Replace(SmartDbConstants.template_columnValues, columnValueSql.ToString());
+            sqlBuild.Replace("{columnNames}", columnNameSql.ToString());
+            sqlBuild.Replace("{columnValues}",columnValueSql.ToString());
             var autoIncrementSql = DbFactory.GetIncrementSql(tableEntity.IsGetIncrementValue);
             sqlBuild.Append(autoIncrementSql);
             dbEntity = new DbEntity()
@@ -186,12 +97,12 @@ namespace SmartDb.NetCore
                 return dbEntity;
             }
             Type type = typeof(T);
-            var tableEntity = GetCacheTableInfo(type);
+            var tableEntity = GetTableInfo(type);
             if (tableEntity == null)
             {
                 return dbEntity;
             }
-            TableColumnAttribute pkColumn = GetCachePkColumnInfo(type);
+            TableColumnAttribute pkColumn = GetPkColumnInfo(type);
             if (pkColumn == null)
             {
                 return dbEntity;
@@ -200,9 +111,9 @@ namespace SmartDb.NetCore
             string dbOperator = DbFactory.GetDbParamOperator();
             var dbParams = new List<IDbDataParameter>();
             StringBuilder sqlBuild = new StringBuilder("delete from {tableName} where {columnName}={dbOperator}{columnName}");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
-            sqlBuild.Replace(SmartDbConstants.template_columnName, pkColumn.ColumnName);
-            sqlBuild.Replace(SmartDbConstants.template_dbOperator, dbOperator);
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
+            sqlBuild.Replace("{columnName}", pkColumn.ColumnName);
+            sqlBuild.Replace("{dbOperator}", dbOperator);
             var dbParam = DbFactory.GetDbParam(pkColumn);
             dbParams.Add(dbParam);
             dbEntity = new DbEntity()
@@ -225,17 +136,16 @@ namespace SmartDb.NetCore
         {
             DbEntity dbEntity = null;
             Type type = typeof(T);
-            var tableEntity = GetCacheTableInfo(type);
+            var tableEntity = GetTableInfo(type);
             if (tableEntity == null)
             {
                 return dbEntity;
             }
             var dbOperatore = DbFactory.GetDbParamOperator();
             var dbParams = new List<IDbDataParameter>();
+            var whereColumns = new AttributeBuilder().GetColumnInfos(whereParam);
             StringBuilder sqlBuild = new StringBuilder("delete from {tableName} {whereCriteria}");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
-            var attributeBuilder = new AttributeBuilder();
-            var whereColumns = attributeBuilder.GetColumnInfos(whereParam);
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
             HandleWhereParam(whereSql,whereColumns, ref sqlBuild, ref dbParams);
             dbEntity = new DbEntity()
             {
@@ -261,7 +171,7 @@ namespace SmartDb.NetCore
                 return dbEntity;
             }
             Type type = typeof(T);
-            var tableEntity = GetCacheTableInfo(type);
+            var tableEntity = GetTableInfo(type);
             if (tableEntity == null)
             {
                 return dbEntity;
@@ -272,7 +182,7 @@ namespace SmartDb.NetCore
             {
                 return dbEntity;
             }
-            var pkColumn = GetCachePkColumnInfo(type);
+            var pkColumn = GetPkColumnInfo(type);
             if (pkColumn == null)
             {
                 return dbEntity;
@@ -280,13 +190,13 @@ namespace SmartDb.NetCore
             pkColumn.ColumnValue = id;
             var dbOperator = DbFactory.GetDbParamOperator();
             var dbParams = new List<IDbDataParameter>();
-            StringBuilder sqlBuild = new StringBuilder("update {tableName} set {updateCriteria}  where {columnName}={dbOperator}{columnName}");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
-            sqlBuild.Replace(SmartDbConstants.template_columnName, pkColumn.ColumnName);
-            sqlBuild.Replace(SmartDbConstants.template_dbOperator, dbOperator);
-            HandleUpdateParam(updateColumns, ref sqlBuild, ref dbParams);
             var dbParam = DbFactory.GetDbParam(pkColumn);
             dbParams.Add(dbParam);
+            StringBuilder sqlBuild = new StringBuilder("update {tableName} set {updateCriteria}  where {columnName}={dbOperator}{columnName}");
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
+            sqlBuild.Replace("columnName", pkColumn.ColumnName);
+            sqlBuild.Replace("{dbOperator}", dbOperator);
+            HandleUpdateParam(updateColumns, ref sqlBuild, ref dbParams);
             dbEntity = new DbEntity()
             {
                 TableEntity = tableEntity,
@@ -312,7 +222,7 @@ namespace SmartDb.NetCore
             {
                 return dbEntity;
             }
-            var tableEntity = GetCacheTableInfo(type);
+            var tableEntity = GetTableInfo(type);
             if (tableEntity == null)
             {
                 return dbEntity;
@@ -325,9 +235,9 @@ namespace SmartDb.NetCore
             }
             string dbOperator = DbFactory.GetDbParamOperator();
             var dbParams = new List<IDbDataParameter>();
-            StringBuilder sqlBuild = new StringBuilder("update {tableName} set {updateCriteria} {whereCriteria}");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
             List<TableColumnAttribute> whereColumns = attributeBuilder.GetColumnInfos(whereParam);
+            StringBuilder sqlBuild = new StringBuilder("update {tableName} set {updateCriteria} {whereCriteria}");
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
             HandleUpdateParam(updateColumns, ref sqlBuild, ref dbParams);
             HandleWhereParam(whereSql, whereColumns, ref sqlBuild, ref dbParams);
             dbEntity = new DbEntity()
@@ -349,12 +259,12 @@ namespace SmartDb.NetCore
         {
             DbEntity dbEntity = null;
             Type type = typeof(T);
-            var tableEntity = GetCacheTableInfo(type);
+            var tableEntity = GetTableInfo(type);
             if (tableEntity == null)
             {
                 return dbEntity;
             }
-            TableColumnAttribute pkColumn = GetCachePkColumnInfo(type);
+            TableColumnAttribute pkColumn = GetPkColumnInfo(type);
             if (pkColumn == null)
             {
                 return dbEntity;
@@ -363,9 +273,9 @@ namespace SmartDb.NetCore
             string dbOperator = DbFactory.GetDbParamOperator();
             List<IDbDataParameter> dbParams = new List<IDbDataParameter>();
             StringBuilder sqlBuild = new StringBuilder("select * from {tableName} where {columnName}={dbOperator}{columnName}");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
-            sqlBuild.Replace(SmartDbConstants.template_columnName, pkColumn.ColumnName);
-            sqlBuild.Replace(SmartDbConstants.template_dbOperator, dbOperator);
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
+            sqlBuild.Replace("{columnName}", pkColumn.ColumnName);
+            sqlBuild.Replace("{dbOperator}", dbOperator);
             var dbParam = DbFactory.GetDbParam(pkColumn);
             dbParams.Add(dbParam);
             dbEntity = new DbEntity()
@@ -393,18 +303,17 @@ namespace SmartDb.NetCore
                 return dbEntity;
             }
             Type type = typeof(T);
-            var tableEntity = GetCacheTableInfo(type);
+            var tableEntity = GetTableInfo(type);
             if (tableEntity == null)
             {
                 return dbEntity;
             }
             string dbOperator = DbFactory.GetDbParamOperator();
             var dbParams = new List<IDbDataParameter>();
+            List<TableColumnAttribute> whereColumns = new AttributeBuilder().GetColumnInfos(whereObjParams);
             StringBuilder sqlBuild = new StringBuilder("select {queryColumns} from {tableName} {whereCriteria}");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
-            var attributeBuilder = new AttributeBuilder();
-            List<TableColumnAttribute> whereColumns = attributeBuilder.GetColumnInfos(whereObjParams);
-            HandleQuerColumns(queryColumns,"",ref sqlBuild,ref dbParams);
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
+            HandleQueryParam(queryColumns,"",ref sqlBuild);
             HandleWhereParam(whereSql,whereColumns,ref sqlBuild,ref dbParams);
             dbEntity = new DbEntity()
             {
@@ -416,20 +325,33 @@ namespace SmartDb.NetCore
         }
 
         /// <summary>
-        /// 根据查询字段、where参数、排序条件、每页数量、总页数查询实体对应分页数据
+        /// 单表分页数据
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="queryColumns"></param>
         /// <param name="whereSql"></param>
-        /// <param name="whereObjParams"></param>
         /// <param name="sortCriteria"></param>
         /// <param name="pageSize"></param>
         /// <param name="pageIndex"></param>
+        /// <param name="whereObjParams"></param>
         /// <returns></returns>
-        public abstract DbEntity QueryPageList<T>(string queryColumns,string whereSql, object whereObjParams, string sortCriteria, int pageSize, int pageIndex);
+        public virtual DbEntity QueryPageList<T>(string queryColumns, string whereSql, string sortColumn, string sortType, long pageSize, long pageIndex, object whereObjParams)
+        {
+            DbEntity dbEntity = null;
+            if (string.IsNullOrEmpty(sortColumn) || string.IsNullOrEmpty(sortType))
+            {
+                return dbEntity;
+            }
+            if (pageSize <= 0 || pageIndex <= 0)
+            {
+                return dbEntity;
+            }
+            dbEntity = new DbEntity();
+            return dbEntity;
+        }
 
         /// <summary>
-        /// 根据查询字段、where参数、排序条件查询实体对应数据总数量
+        /// 根据查询条件、where参数查询实体对应数据总数量
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="whereSql"></param>
@@ -449,7 +371,7 @@ namespace SmartDb.NetCore
             string dbOperator = DbFactory.GetDbParamOperator();
             List<TableColumnAttribute> whereColumns = attributeBuilder.GetColumnInfos(whereObjParams);
             StringBuilder sqlBuild = new StringBuilder("select count(*) from  {tableName} {whereCriteria}");
-            sqlBuild.Replace(SmartDbConstants.template_tableName, tableEntity.TableName);
+            sqlBuild.Replace("{tableName}", tableEntity.TableName);
             HandleWhereParam(whereSql,whereColumns, ref sqlBuild, ref dbParams);
             dbEntity = new DbEntity()
             {
@@ -501,104 +423,110 @@ namespace SmartDb.NetCore
         }
 
         /// <summary>
-        ///  处理查询字段
+        /// 处理查询字段
         /// </summary>
         /// <param name="queryColumns"></param>
-        /// <param name="tableAlias"></param>
+        /// <param name="alias"></param>
         /// <param name="sqlBuild"></param>
-        /// <param name="dbParams"></param>
-        public void HandleQuerColumns(string queryColumns,string tableAlias, ref StringBuilder sqlBuild, ref List<IDbDataParameter> dbParams)
+        public virtual void HandleQueryParam(string queryColumns, string alias, ref StringBuilder sqlBuild)
         {
-            if (!string.IsNullOrEmpty(queryColumns))
+            StringBuilder querySqlBuilder = new StringBuilder();
+            if (string.IsNullOrEmpty(queryColumns))
             {
-                var queryColumnBuilder = new StringBuilder();
-                if (queryColumns.IndexOf(',') > 0)
-                {
-                    var columnNames = queryColumns.Split(',');
-                    var columnNameList = (from a in columnNames where a != "" select a).ToList();
-                    int i = 0;
-                    foreach (var columnName in columnNameList)
-                    {
-                        var tmpColumnName = string.IsNullOrEmpty(tableAlias) ? columnName : tableAlias + "." + columnName;
-                        queryColumnBuilder.Append(tmpColumnName);
-                        if (i != columnNameList.Count-1)
-                        {
-                            queryColumnBuilder.Append(",");
-                        }
-                        i++;
-                    }
-                }
-                else
-                {
-                    var tmpColumnName = string.IsNullOrEmpty(tableAlias) ? queryColumns : tableAlias + "." + queryColumns;
-                    queryColumnBuilder.Append(tmpColumnName);
-                }
-                sqlBuild.Replace("{queryColumns}", queryColumnBuilder.ToString());
+                queryColumns = "*";
+            }
+            if (queryColumns.IndexOf(',') > 0)
+            {
+                IList<string> columnItmes = columnItmes = (from w in queryColumns.Split(',') where !w.Equals("") select string.IsNullOrEmpty(alias)?w: alias + "." + w).ToList();
+                querySqlBuilder.Append(string.Join(",", columnItmes));
             }
             else
             {
-                sqlBuild.Replace("{queryColumns}", "*");
+                querySqlBuilder.Append(string.IsNullOrEmpty(alias)?queryColumns:alias+"."+queryColumns);
             }
-           
+            sqlBuild.Replace("{queryColumns}", querySqlBuilder.ToString());
         }
 
         /// <summary>
-        /// 处理updateParam参数
+        /// 处理实体处理updateParam参数
         /// </summary>
         /// <param name="updateColumns"></param>
         /// <param name="sqlBuild"></param>
         /// <param name="dbParams"></param>
-        public void HandleUpdateParam(List<TableColumnAttribute> updateColumns, ref StringBuilder sqlBuild, ref List<IDbDataParameter> dbParams)
+        public virtual void HandleUpdateParam(List<TableColumnAttribute> updateColumns, ref StringBuilder sqlBuild, ref List<IDbDataParameter> dbParams)
         {
-            if (updateColumns == null)
+            StringBuilder updateSqlBuild = new StringBuilder();
+            if (updateColumns != null)
             {
-                sqlBuild.Replace("{updateCriteria}", "");
-            }
-            else
-            {
-                int i = 0;
                 var dbOperator = DbFactory.GetDbParamOperator();
-                StringBuilder updateSqlBuild = new StringBuilder();
-                foreach (var updateColumn in updateColumns)
+                if (updateColumns != null && updateColumns.Count > 0)
                 {
-                    updateSqlBuild.AppendFormat("{0}={1}{0}", updateColumn.ColumnName, dbOperator);
-                    if (i != updateColumns.Count - 1)
+                    int i = 0;
+                    foreach (var columnItem in updateColumns)
                     {
-                        updateSqlBuild.Append(",");
+                        updateSqlBuild.AppendFormat("{0}={1}{0}", columnItem.ColumnName, dbOperator);
+                        if (i != updateColumns.Count - 1)
+                        {
+                            updateSqlBuild.Append(",");
+                        }
+                        var dbParam = DbFactory.GetDbParam(columnItem);
+                        dbParams.Add(dbParam);
+                        i++;
                     }
-                    var dbParam = DbFactory.GetDbParam(updateColumn);
-                    dbParams.Add(dbParam);
-                    i++;
                 }
-                sqlBuild.Replace("{updateCriteria}", updateSqlBuild.ToString());
             }
+            sqlBuild.Replace("{updateCriteria}", updateSqlBuild.ToString());
         }
 
         /// <summary>
-        /// 处理whereParam参数
+        /// 处理实体whereParam参数
         /// </summary>
         /// <param name="whereSql"></param>
         /// <param name="whereColumns"></param>
         /// <param name="sqlBuild"></param>
         /// <param name="dbParams"></param>
-        public void HandleWhereParam(string whereSql,List<TableColumnAttribute> whereColumns, ref StringBuilder sqlBuild, ref List<IDbDataParameter> dbParams)
+        public virtual void HandleWhereParam(string whereSql, List<TableColumnAttribute> whereColumns, ref StringBuilder sqlBuild, ref List<IDbDataParameter> dbParams)
         {
+            StringBuilder wherSqlBuild = new StringBuilder();
             if (!string.IsNullOrEmpty(whereSql))
             {
                 if (whereColumns != null)
                 {
-                    foreach (var whereColumn in whereColumns)
+                    foreach (var columnItem in whereColumns)
                     {
-                        var dbParam = DbFactory.GetDbParam(whereColumn);
+                        var dbParam = DbFactory.GetDbParam(columnItem);
                         dbParams.Add(dbParam);
                     }
                 }
-                sqlBuild.Replace("{whereCriteria}", "where " + whereSql);
+                wherSqlBuild.Append(" where " + whereSql);
             }
-            else
-            {
-                sqlBuild.Replace("{whereCriteria}", "");
-            }
+            sqlBuild.Replace("{whereCriteria}", wherSqlBuild.ToString());
+        }
+
+        /// <summary>
+        /// 获取实体表信息
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        protected TableAttribute GetTableInfo(Type type)
+        {
+            TableAttribute tableEntity = null;
+            var attributeBuilder = new AttributeBuilder();
+            tableEntity = attributeBuilder.GetTableInfo(type);
+            return tableEntity;
+        }
+
+        /// <summary>
+        /// 获取实体表主键字段信息
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        protected TableColumnAttribute GetPkColumnInfo(Type type)
+        {
+            TableColumnAttribute pkColumn = null;
+            var attributeBuilder = new AttributeBuilder();
+            pkColumn = attributeBuilder.GetPkColumnInfo(type);
+            return pkColumn;
         }
 
     }

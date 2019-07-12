@@ -120,8 +120,8 @@ namespace TestSmartDbMyqlConsole
             var dataList4 = db.Query<UserInfo>(string.Format("select * from UserInfo where UserId={0}UserId", dbOperator), new { UserId = 4 });
 
             //分页查询列表
-            var pageDataList1 = db.QueryPageList<UserInfo>(10, 1, "*", "UserId>2", "UserId asc", null);
-            var pageDataList2 = db.QueryPageList<UserInfo>(10, 1, "UserId,UserName", string.Format("UserId>{0}UserId", dbOperator), "UserId asc", new { UserId = 2 });
+            var pageDataList1 = db.QueryPageList<UserInfo>("*", "UserId>2", "UserId", "asc", 10, 1, null);
+            var pageDataList2 = db.QueryPageList<UserInfo>("UserId,UserName", string.Format("UserId>{0}UserId", dbOperator), "UserId", "asc", 10, 1, new { UserId = 2 });
         }
 
         /// <summary>

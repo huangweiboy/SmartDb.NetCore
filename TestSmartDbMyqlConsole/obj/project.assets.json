@@ -235,7 +235,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "SmartDb.Mapper.NetCore/2.34.0": {
+      "SmartDb.Mapper.NetCore/2.50.0": {
         "type": "package",
         "dependencies": {
           "System.Reflection.Emit.Lightweight": "4.3.0"
@@ -247,11 +247,11 @@
           "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll": {}
         }
       },
-      "SmartDb.MySql.NetCore/2.42.0": {
+      "SmartDb.MySql.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
           "MySql.Data": "8.0.15",
-          "SmartDb.NetCore": "2.42.0"
+          "SmartDb.NetCore": "2.60.0"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.MySql.NetCore.dll": {}
@@ -260,10 +260,10 @@
           "lib/netstandard2.0/SmartDb.MySql.NetCore.dll": {}
         }
       },
-      "SmartDb.NetCore/2.42.0": {
+      "SmartDb.NetCore/2.60.0": {
         "type": "package",
         "dependencies": {
-          "SmartDb.Mapper.NetCore": "2.34.0"
+          "SmartDb.Mapper.NetCore": "2.50.0"
         },
         "compile": {
           "lib/netstandard2.0/SmartDb.NetCore.dll": {}
@@ -975,10 +975,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "SmartDb.Mapper.NetCore/2.34.0": {
-      "sha512": "OnH8SlgeblOz4mLz/E8r8MetJpicB50Jt8LBdyWn1c8CdP3le/E2sg2cRFqFP8GXMkWvQCGA5kQtBDGRUyC+mA==",
+    "SmartDb.Mapper.NetCore/2.50.0": {
+      "sha512": "4//B/f6j/t6767ciq3L8s0qXBlDg6SMHF+sB1hz0fBodqViLlroN8P64AhS1hDeiuN4p+8QNvczQDAf7IVQRMQ==",
       "type": "package",
-      "path": "smartdb.mapper.netcore/2.34.0",
+      "path": "smartdb.mapper.netcore/2.50.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -988,30 +988,29 @@
         "lib/net46/SmartDb.Mapper.NetCore.dll",
         "lib/net461/SmartDb.Mapper.NetCore.dll",
         "lib/netstandard2.0/SmartDb.Mapper.NetCore.dll",
-        "smartdb.mapper.netcore.2.34.0.nupkg.sha512",
+        "smartdb.mapper.netcore.2.50.0.nupkg.sha512",
         "smartdb.mapper.netcore.nuspec"
       ]
     },
-    "SmartDb.MySql.NetCore/2.42.0": {
-      "sha512": "TyF3//AtMFktEyXj5BWXJhu7n0ep6/PGEs7/VKXcGk+6s9QBErBWkVsf4thW5YqHAbokhJGVvPQSPYA7kpHFfQ==",
+    "SmartDb.MySql.NetCore/2.60.0": {
+      "sha512": "mynNFfNUv6eLDPAR1bE7AjkxKIkI/y5sLKm877uDxe+TzZHZEFPS6l/sxYwvbL7VK3EpnbMPieXEWkoovtBuBA==",
       "type": "package",
-      "path": "smartdb.mysql.netcore/2.42.0",
+      "path": "smartdb.mysql.netcore/2.60.0",
       "files": [
         ".signature.p7s",
         "lib/net452/SmartDb.MySql.NetCore.dll",
         "lib/net46/SmartDb.MySql.NetCore.dll",
         "lib/net461/SmartDb.MySql.NetCore.dll",
         "lib/netstandard2.0/SmartDb.MySql.NetCore.dll",
-        "smartdb.mysql.netcore.2.42.0.nupkg.sha512",
+        "smartdb.mysql.netcore.2.60.0.nupkg.sha512",
         "smartdb.mysql.netcore.nuspec"
       ]
     },
-    "SmartDb.NetCore/2.42.0": {
-      "sha512": "Vt5++OGMJoOuf7H1JFpzNU+pgEnvfiQfubbJzNW8LNm+ZoSQEIiVPu8lzyMxWAJipnyt++uaqrSPQHIXu61Xmw==",
+    "SmartDb.NetCore/2.60.0": {
+      "sha512": "WUGIDjRwyHtRBzRLrJFW6NtT3xNmcBJORBpZ0xBALwxpJf5TvwzgbWvA3i5JW4G7vpbeHTT0h39FpjaXSPrIZA==",
       "type": "package",
-      "path": "smartdb.netcore/2.42.0",
+      "path": "smartdb.netcore/2.60.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/SmartDb.NetCore.dll",
         "lib/net451/SmartDb.NetCore.dll",
@@ -1019,7 +1018,7 @@
         "lib/net46/SmartDb.NetCore.dll",
         "lib/net461/SmartDb.NetCore.dll",
         "lib/netstandard2.0/SmartDb.NetCore.dll",
-        "smartdb.netcore.2.42.0.nupkg.sha512",
+        "smartdb.netcore.2.60.0.nupkg.sha512",
         "smartdb.netcore.nuspec"
       ]
     },
@@ -1761,7 +1760,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "SmartDb.MySql.NetCore >= 2.42.0"
+      "SmartDb.MySql.NetCore >= 2.60.0"
     ]
   },
   "packageFolders": {
@@ -1819,7 +1818,7 @@
           },
           "SmartDb.MySql.NetCore": {
             "target": "Package",
-            "version": "[2.42.0, )"
+            "version": "[2.60.0, )"
           }
         },
         "imports": [

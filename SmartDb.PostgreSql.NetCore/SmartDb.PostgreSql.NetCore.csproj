@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>SmartDb.PostgreSql.NetCore</PackageId>
+    <Version>2.60.0</Version>
+    <Authors>Bruce</Authors>
+    <Company>Bruce</Company>
+    <Description>SmartDb.PostgreSql.NetCore是一套基于DoNet和DoNetCore对PostgreSql数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架。
+框架开源地址：https://github.com/joyet/SmartDb.NetCore
+</Description>
+    <PackageProjectUrl>https://github.com/joyet/SmartDb.NetCore</PackageProjectUrl>
+    <PackageTags>SmartDb.PostgreSql.NetCore ORM DoNet DoNetCore PostgreSql</PackageTags>
+    <PackageReleaseNotes>SmartDb.PostgreSql.NetCore是一套基于DoNet和DoNetCore对PostgreSql数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架。，需要SmartDb.NetCore作为基础框架.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql" Version="4.0.7" />
+    <PackageReference Include="SmartDb.NetCore" Version="2.60.0" />
+  </ItemGroup>
+
+</Project>

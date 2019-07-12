@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSmartDbMyqlConsole", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSmartDbSqlServerConsole", "TestSmartDbSqlServerConsole\TestSmartDbSqlServerConsole.csproj", "{A64AA1A2-E261-4365-9DC8-D00B4A97B3DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDb.SQLite.NetCore", "SmartDb.SQLite.NetCore\SmartDb.SQLite.NetCore.csproj", "{DCD10A6C-AFBF-4971-8337-AD69CFB0C0C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartDb.SQLite.NetCore", "SmartDb.SQLite.NetCore\SmartDb.SQLite.NetCore.csproj", "{DCD10A6C-AFBF-4971-8337-AD69CFB0C0C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmartDbSqliteConsole", "TestSmartDbSqliteConsole\TestSmartDbSqliteConsole.csproj", "{CD495844-8C81-41E8-9EDD-999CA2A29D92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSmartDbSqliteConsole", "TestSmartDbSqliteConsole\TestSmartDbSqliteConsole.csproj", "{CD495844-8C81-41E8-9EDD-999CA2A29D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartDb.PostgreSql.NetCore", "SmartDb.PostgreSql.NetCore\SmartDb.PostgreSql.NetCore.csproj", "{1765BBF1-B59D-488E-911D-59182FD4A5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmartDbPostgreSQLConsole", "TestSmartDbPostgreSQLConsole\TestSmartDbPostgreSQLConsole.csproj", "{21482272-6C03-43C6-B4EB-808A254CE4BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{CD495844-8C81-41E8-9EDD-999CA2A29D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD495844-8C81-41E8-9EDD-999CA2A29D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD495844-8C81-41E8-9EDD-999CA2A29D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1765BBF1-B59D-488E-911D-59182FD4A5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1765BBF1-B59D-488E-911D-59182FD4A5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1765BBF1-B59D-488E-911D-59182FD4A5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1765BBF1-B59D-488E-911D-59182FD4A5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21482272-6C03-43C6-B4EB-808A254CE4BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21482272-6C03-43C6-B4EB-808A254CE4BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21482272-6C03-43C6-B4EB-808A254CE4BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21482272-6C03-43C6-B4EB-808A254CE4BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

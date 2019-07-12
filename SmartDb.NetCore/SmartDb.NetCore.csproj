@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45;net4.5.1;net4.5.2;net46;net4.6.1</TargetFrameworks>
-    <Version>2.50.0</Version>
-    <Description>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、Oracle、SQLite、Access数据库支持的快速开发和轻量级ORM框架。
+    <Version>2.60.0</Version>
+    <Description>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对 SqlServer、MySql、SQLite、PostgreSq数据库支持的快速开发和轻量级ORM框架.
 框架开源地址：https://github.com/joyet/SmartDb.NetCore</Description>
     <PackageProjectUrl>https://github.com/joyet/SmartDb.NetCore/</PackageProjectUrl>
-    <PackageTags>SmartDb.NetCore ORM  DoNet DoNetCore SmartDb</PackageTags>
-    <PackageReleaseNotes>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、Oracle数据库支持的快速开发和轻量级ORM框架.</PackageReleaseNotes>
+    <PackageTags>SmartDb.NetCore ORM  DoNet DoNetCore SmartDb SqlServer MySql SQLite PostgreSq</PackageTags>
+    <PackageReleaseNotes>SmartDb.NetCore是一套基于ADO.Net和DoNetCore对 SqlServer、MySql、SQLite、PostgreSq数据库支持的快速开发和轻量级ORM框架.</PackageReleaseNotes>
     <Authors>Bruce</Authors>
     <Company>Bruce</Company>
   </PropertyGroup>

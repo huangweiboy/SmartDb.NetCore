@@ -8,19 +8,19 @@ namespace SmartDb.NetCore
 {
     public class PageResultEntity
     {
-        public int PageSize { get; set; }
+        public long PageSize { get; set; }
 
-        public int CurrentPageIndex { get; set; }
+        public long CurrentPageIndex { get; set; }
 
-        public int TotalCount { get; set; }
+        public long TotalCount { get; set; }
 
-        public int TotalPageIndex { get; set; }
+        public long TotalPageIndex { get; set; }
 
         public object Data{ get; set; }
 
         public PageResultEntity()
         {
-            PageSize = 10;
+            PageSize = 0;
             CurrentPageIndex = 1;
             TotalCount = 0;
             TotalPageIndex = 0;

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SmartDb.SqlServer.NetCore</id>
+    <version>2.60.0</version>
+    <authors>Bruce</authors>
+    <owners>Bruce</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/joyet/SmartDb.NetCore</projectUrl>
+    <description>SmartDb.SqlServer.NetCore是一套基于DoNet和DoNetCore对SqlServer数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架。
+框架开源地址：https://github.com/joyet/SmartDb.NetCore</description>
+    <releaseNotes>SmartDb.SqlServer.NetCore是一套基于DoNet和DoNetCore对SqlServer数据库支持的快速开发和轻量级ORM框架，需要SmartDb.NetCore作为基础框架.</releaseNotes>
+    <tags>SmartDb.SqlServer.NetCore ORM DoNet DoNetCore SqlServer</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.1">
+        <dependency id="SmartDb.NetCore" version="2.60.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="SmartDb.NetCore" version="2.60.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="SmartDb.NetCore" version="2.60.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="SmartDb.NetCore" version="2.60.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="SmartDb.NetCore" version="2.60.0" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.SqlServer.NetCore\bin\Release\net4.5.1\SmartDb.SqlServer.NetCore.dll" target="lib\net451\SmartDb.SqlServer.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.SqlServer.NetCore\bin\Release\net4.5.2\SmartDb.SqlServer.NetCore.dll" target="lib\net452\SmartDb.SqlServer.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.SqlServer.NetCore\bin\Release\net4.6.1\SmartDb.SqlServer.NetCore.dll" target="lib\net461\SmartDb.SqlServer.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.SqlServer.NetCore\bin\Release\net46\SmartDb.SqlServer.NetCore.dll" target="lib\net46\SmartDb.SqlServer.NetCore.dll" />
+    <file src="F:\work\dotnetcore-work\SmartDb-work\SmartDb.NetCore\SmartDb.SqlServer.NetCore\bin\Release\netstandard2.0\SmartDb.SqlServer.NetCore.dll" target="lib\netstandard2.0\SmartDb.SqlServer.NetCore.dll" />
+  </files>
+</package>
