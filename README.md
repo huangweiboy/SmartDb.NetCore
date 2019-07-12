@@ -1,4 +1,4 @@
-#### SmartDb.NetCore是一套基于ADO.Net和DoNetCore对MSSql、MySql、SQLite、Oracle数据库支持的快速开发和轻量级ORM框架.
+#### SmartDb.NetCore是一套基于ADO.Net和DoNetCore对SqlServer、MySql、SQLite、PostgreSql数据库支持的快速开发和轻量级ORM框架.
 
 SmartDb.NetCore框架特点如下：
    * 支持.NF和DoNetCore框架。
@@ -11,6 +11,7 @@ SmartDb.NetCore框架特点如下：
 SmartDb.MySql.NetCore是SmartDb.NetCore对MySql支持的驱动包，Nuget包地址如下：[SmartDb.MySql.NetCore](https://www.nuget.org/packages/SmartDb.MySql.NetCore/)<br>
 SmartDb.SqlServer.NetCore是SmartDb.NetCore对SqlServer支持的驱动包，Nuget包地址如下：[SmartDb.SqlServer.NetCore](https://www.nuget.org/packages/SmartDb.SqlServer.NetCore/)
 SmartDb.SQLite.NetCore是SmartDb.NetCore对SQLite支持的驱动包，Nuget包地址如下：[SmartDb.SQLite.NetCore](https://www.nuget.org/packages/SmartDb.SQLite.NetCore/)
+SmartDb.PostgreSql.NetCore是SmartDb.NetCore对SQLite支持的驱动包，Nuget包地址如下：[SmartDb.PostgreSql.NetCore](https://www.nuget.org/packages/SmartDb.PostgreSql.NetCore/)
 
 实体类：
 ``` 
@@ -127,8 +128,8 @@ SmartDb.SQLite.NetCore是SmartDb.NetCore对SQLite支持的驱动包，Nuget包�
             var dataList4 = db.Query<UserInfo>(string.Format("select * from UserInfo where UserId={0}UserId", dbOperator), new { UserId = 4 });
 
             //分页查询列表
-            var pageDataList1 = db.QueryPageList<UserInfo>(10, 1, "*", "UserId>2", "UserId asc", null);
-            var pageDataList2 = db.QueryPageList<UserInfo>(10, 1, "UserId,UserName", string.Format("UserId>{0}UserId", dbOperator), "UserId asc", new { UserId = 2 });
+            var pageDataList1 = db.QueryPageList<UserInfo>("*", "UserId>2", "UserId", "asc", 10, 1, null);
+            var pageDataList2 = db.QueryPageList<UserInfo>("UserId,UserName", string.Format("UserId>{0}UserId", dbOperator), "UserId", "asc", 10, 1, new { UserId = 2 });
         }
 
         /// <summary>
